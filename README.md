@@ -1,6 +1,6 @@
 # An-Hour-of-Python
 
-```
+```python
 In [1]: mylist=[1,2,3, "DNA"]
 In [2]: mylist
 Out[2]: [1, 2, 3, 'DNA']
