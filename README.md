@@ -4,7 +4,9 @@ Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2)
 
 “Everybody in this country should learn to program a computer, because it teaches you how to think”.
 
-I fully agree with this, programming is just not a way to solve problems or get things done. As you progress to gain more knowledge, you will see how your coding skills can affect the ways you think. After all, if you know a problem well enough to describe it to a computer, you probably know it better than most. This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
+I fully agree with this, programming is not just a way to solve problems or get things done, but it can be so much more.
+
+As you progress to gain more knowledge, you will see how your coding skills can affect the ways you think. After all, if you know a problem well enough to describe it to a computer, you probably know it better than most. This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
 
 Python i a general programming language, the world's most popular programming language in 2019 and its popularity has [only increased since](https://pypl.github.io/PYPL.html). Python is especially popular in the fields of [data science](https://en.wikipedia.org/wiki/Data_science) and [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), two fields that should be of interest to a student of biology.
 
