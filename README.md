@@ -65,7 +65,7 @@ formalize a simple cloning procedure.
 
 ### Exercises
 
-The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](ddd)).
+The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](install_Anaconda_and_add_channel.md)).
 
 Start Spyder from the start menu of your computer.
 
@@ -73,10 +73,9 @@ Start Spyder from the start menu of your computer.
 
 Spyder has two important parts, the text editor to the left and the interactive console to the right at the bottom.
 
-Download and save the file "spyder_session.py".
+Download and save the file ```spyder_session.py```.
 
-Open it in Spyder, it shoul look as the picture above.
-
+Save the file to your computer and open it in Spyder, it should look as the picture above.
 
 
 ### Where to go from here ?
