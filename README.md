@@ -65,7 +65,7 @@ formalize a simple cloning procedure.
 
 ### Exercises
 
-The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](Installation%instructions/install_Anaconda_and_add_channel.md)).
+The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](Installation%20instructions/install_Anaconda_and_add_channel.md)).
 
 Start Spyder from the start menu of your computer.
 
