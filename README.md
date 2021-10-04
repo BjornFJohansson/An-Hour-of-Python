@@ -1,6 +1,6 @@
 # An-Hour-of-Python
 
-Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2) 
+Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2)
 
 “Everybody in this country should learn to program a computer, because it teaches you how to think”.
 
@@ -50,6 +50,8 @@ Python is used for everything from
 
 You can even make games using Python:
 
+[![pygame](pics/pygame.gif)](https://www.pygame.org)
+
 
 
 
@@ -67,9 +69,13 @@ The Spyder editor was installed with the Anaconda distribution that you should h
 
 Start Spyder from the start menu of your computer.
 
-![](Spyder)
+![spyder](pics/spyder.png)
 
 Spyder has two important parts, the text editor to the left and the interactive console to the right at the bottom.
+
+Download and save the file "spyder_session.py".
+
+Open it in Spyder, it shoul look as the picture above.
 
 
 
