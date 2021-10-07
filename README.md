@@ -12,7 +12,7 @@ I fully agree with this, programming is not just a way to solve problems or get 
 
 As you progress to gain more knowledge, you will see how your coding skills can affect the ways you think. After all, if you know a problem well enough to describe it to a computer, you probably know it better than most. This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
 
-### Python
+### Python :snake:
 
 [![xkcd](https://imgs.xkcd.com/comics/python.png)](https://xkcd.com)
 
@@ -35,7 +35,7 @@ int main()
 }
 ```
 
-#### Python
+#### Python 
 
 ```python
 # This Python program prints Hello, World!
@@ -113,18 +113,13 @@ is not needed. The important thing is that the
 
 Follow the five steps below to install the pydna python package:
 
-1 Activate the “Environments” tab
-
-2 Select “all”
-
-3 type “pydna” in the text box
-
-4 Click the checkbox
-
-5 Click “Apply”
+<p style='color:red'>1 Activate the “Environments” tab</p>
+<p style='color:green'>2 Select “all”</p>
+<p style='color:orange'>3 type “pydna” in the text box</p>
+<p style='color:blue'>4 Click the checkbox</p>
+<p style='color:magenta'>5 Click “Apply”</p>
 
 ![install_pydna](pics/install_pydna.png)
-
 
 Verify installation
 
@@ -137,8 +132,6 @@ Type:
     pydna.__version__⮠
 
 As indicated below (⮠ = return key).
-
-
 
 ![spyder2](pics/spyder2.png)
 
