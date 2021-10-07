@@ -94,29 +94,24 @@ The next step is to start the Anaconda Navigator. How to do this may differ betw
 
 ![start_navigator](pics/start_navigator.png)
 
+Anaconda Navigator looks like this:
 
 
-
-Anaconda Navigator looks like in
-
+![navigator](pics/navigator.png)
 
 
-Adding a software channel
+It is sometimes necessary the tell Anaconda where to find useful software. We can do this by adding a software channel. Click on the “**Channels**” link in the upper right corner of the window. Add the channel ```BjornFJohansson``` as shown below and press return.
 
-It is necessary the tell Anaconda where to find useful software. We can
-do this by adding a software channel to Launcher. Click on the
-“**Channels**” link in the upper right corner of the window (Fig ). Add
-the channel “BjornFJohansson” as shown in Fig 4 and press return.
+
+![add_channel](pics/add_channel.png)
 
 
 
 When The “conda-forge” channel may not be present on your computer. It
-is probably not needed. The important thing is that the
+is not needed. The important thing is that the
 **BjornFJohansson** channel is at the end.
 
-Install the pydna python package
-
-Follow the five steps in :
+Follow the five steps below to install the pydna python package:
 
 1 Activate the “Environments” tab
 
@@ -128,18 +123,24 @@ Follow the five steps in :
 
 5 Click “Apply”
 
+![install_pydna](pics/install_pydna.png)
+
+
 Verify installation
 
 Start “Spyder” from the start menu of your computer.
 
 Type:
 
-*import pydna* ⮠
+    import pydna ⮠
 
-*pydna.\_\_version\_\_*⮠
+    pydna.__version__⮠
 
-As indicated in (⮠ = return key).
+As indicated below (⮠ = return key).
 
+
+
+![spyder2](pics/spyder2.png)
 
 
 
