@@ -1,14 +1,22 @@
-### ![hourglass](pics/hourglass_small.png) An-Hour-of-Python
+# An-Hour-of-Python ![hourglass](pics/hourglass_small.png) 
+
+## Programming?
 
 Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2):
 
-“““Everybody in this country should learn to program a computer, because it teaches you how to think”““.
+
+“Everybody in this country should learn to program a computer, because it teaches you how to think”.
+
 
 I fully agree with this, programming is not just a way to solve problems or get things done, but it can be so much more.
 
 As you progress to gain more knowledge, you will see how your coding skills can affect the ways you think. After all, if you know a problem well enough to describe it to a computer, you probably know it better than most. This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
 
-Python i a general programming language, the world's most popular programming language in 2019 and its popularity has [only increased since](https://pypl.github.io/PYPL.html). Python is especially popular in the fields of [data science](https://en.wikipedia.org/wiki/Data_science) and [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), two fields that should be of interest to a biology student.
+## Python
+
+[![xkcd](https://imgs.xkcd.com/comics/python.png)](https://xkcd.com)
+
+Python i a general programming language, the world's most popular in 2019 and its popularity has [only increased since](https://pypl.github.io/PYPL.html). Python is especially popular in the fields of [data science](https://en.wikipedia.org/wiki/Data_science) and [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), two fields that should be of interest to a biology student.
 
 Python is known to have a simple compact syntax and easily readable code since it contains few special characters, such as semicolons.
 
@@ -34,9 +42,11 @@ int main()
 print("Hello, World! \n")
 ```
 
-Because of its simplicity, Python is suitable for beginners and for people who do not code every day (like me). It is suitable both for scripts for automation of some repetitive task but also for complex software with graphical interfaces.
+This is not to say that one language is necessarily better than another for all purposes. It is safe to say that Python is one of the best for beginners.
 
-One of the most important advantages of Python is the large size of its community, since this means that you can often find questions and answers to your coding problems by a simply searching with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
+Because of its simplicity, Python is suitable borth for beginners and for people who do not code every day (like me). It is suitable both for quick scripts for automation of some repetitive task but also for complex software with graphical interfaces.
+
+One of the most important advantages of Python is the **large size of its community**, since this means that you can often find questions and answers to your coding problems by a simply searching with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
 
 Python is used for everything from
 
@@ -59,9 +69,104 @@ We will spend one hour learning the basics of Python using simple examples. The 
 
 The tutor will demonstrate basic data types, repetition and decision making in the logical flow of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated development environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
 
-Python will be used to search sequence data on Genbank using pydna and formalize a simple cloning procedure.
+Python will be used to search sequence data on Genbank using [pydna](https://github.com/BjornFJohansson/pydna) and formalize a simple cloning procedure.
 
-### Exercises
+## Installation
+
+# Installing Anaconda
+
+The Anaconda Scientific Python distribution from Continuum analytics is
+a nice way to install python on any computer. Anaconda makes it easier
+to install dependencies and it is avalible for free. The the whole
+installation is located in a folder in the user's directory in a folder
+that is easily removable. Anaconda is available for the Microsoft
+Windows, MacOSX and Linux platforms.
+
+## Anaconda installation
+
+Go to the [website](https://store.continuum.io/cshop/anaconda/) of
+Anaconda (Fig ). Download the Anaconda installation file for your
+operating system and follow the installation instructions and select
+default options whenever applicable.
+
+
+
+The installation file is large, but files are only installed in one
+directory in the users private folder.
+
+Installation on Microsoft Windows
+
+Double click the installer to launch
+
+Installation on MacOSX
+
+Double-click the downloaded file and click continue to start the
+installation
+
+Installation on Linux
+
+Type: bash Anaconda3-2021.05-Linux-x86_64.sh
+
+If you have any trouble with this step, check the detailed instructions
+[here](https://docs.anaconda.com/anaconda/install).
+
+When you have installed Anaconda, the next step is to start the Anaconda
+Navigator. How to do this may differ between platforms. The MacOSX
+installer leaves a green Anaconda shortcut on the desktop (Fig ).
+
+
+
+Anaconda Navigator looks like in
+
+
+
+Adding a software channel
+
+It is necessary the tell Anaconda where to find useful software. We can
+do this by adding a software channel to Launcher. Click on the
+“**Channels**” link in the upper right corner of the window (Fig ). Add
+the channel “BjornFJohansson” as shown in Fig 4 and press return.
+
+
+
+When The “conda-forge” channel may not be present on your computer. It
+is probably not needed. The important thing is that the
+**BjornFJohansson** channel is at the end.
+
+Install the pydna python package
+
+Follow the five steps in :
+
+1 Activate the “Environments” tab
+
+2 Select “all”
+
+3 type “pydna” in the text box
+
+4 Click the checkbox
+
+5 Click “Apply”
+
+Verify installation
+
+Start “Spyder” from the start menu of your computer.
+
+Type:
+
+*import pydna* ⮠
+
+*pydna.\_\_version\_\_*⮠
+
+As indicated in (⮠ = return key).
+
+<figure>
+<img src="./Pictures/10000001000005A2000002FB6E7D6CA2765BD9A8.png" style="width:17.801cm;height:9.417cm" alt="Fig 6: Spyder with pydna installed." /><figcaption aria-hidden="true">Fig 6: Spyder with pydna installed.</figcaption>
+</figure>
+
+
+
+
+## Exercises
 
 The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](Installation%20instructions/install_Anaconda_and_add_channel.md)).
 
