@@ -113,11 +113,14 @@ is not needed. The important thing is that the
 
 Follow the five steps below to install the pydna python package:
 
-<p style='color:red'>1 Activate the “Environments” tab</p>
-<p style='color:green'>2 Select “all”</p>
-<p style='color:orange'>3 type “pydna” in the text box</p>
-<p style='color:blue'>4 Click the checkbox</p>
-<p style='color:magenta'>5 Click “Apply”</p>
+- ![](https://via.placeholder.com/15/f03c15/000000?text=+) 1 Activate the “Environments” tab
+- ![](https://via.placeholder.com/15/00ff00/000000?text=+) 2 Select “all”
+- ![](https://via.placeholder.com/15/ffa500/000000?text=+) 3 type “pydna” in the text box
+- ![](https://via.placeholder.com/15/1e90ff/000000?text=+) 4 Click the checkbox
+- ![](https://via.placeholder.com/15/ff00ff/000000?text=+) 5 Click “Apply”
+
+
+
 
 ![install_pydna](pics/install_pydna.png)
 
@@ -125,40 +128,45 @@ Verify installation
 
 Start “Spyder” from the start menu of your computer.
 
-Type:
+Type the text below in the console window in the lower right corner:
 
     import pydna ⮠
 
     pydna.__version__⮠
 
-As indicated below (⮠ = return key).
+(⮠ = return key).
 
 ![spyder2](pics/spyder2.png)
 
 
 
-## Exercises
+# Exercises
 
-The Spyder editor was installed with the Anaconda distribution that you should have installed before this class ([See instructions here](Installation%20instructions/install_Anaconda_and_add_channel.md)).
+The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
 
-Start Spyder from the start menu of your computer.
+Download and save the file [```spyder_session.py```](spyder_session.py) on your desktop.
+
+Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like below:
 
 ![spyder](pics/spyder.png)
 
+
 Spyder has two important parts, the text editor to the left and the interactive console to the right at the bottom.
 
-Download and save the file [```spyder_session.py```](spyder_session.py).
-
-Save the file to your computer and open it in Spyder, it should look as the picture above.
 
 
 
 
 ### After the class, where to go from here?
 
-As any new language that you might try to learn, you will lose your new knowledge if you do not practise. The challenge is to find something in your daily life, however small, where you can apply programming to save time or improve quality.
+As any new language that you might try to learn, you will lose your new knowledge if you do not practise. The challenge is to practise by finding something in your daily life, however small, where you can apply programming to save time or improve quality.
 
 Here is a list of ten suggested programming [projects](https://favtutor.com/blog-details/7-Python-Projects-For-Beginners) for beginners.
+
+
+### How do I use Python?
+
+
 
 
 ### Resources
@@ -190,7 +198,7 @@ Here you'll find resources for learning to program in Python for people with a b
 ----
 
 [Want to learn and master Python?](https://exercism.org/tracks/python)
-Join Exercism’s Python Track for access to _**129 exercises**_ grouped into 15 Python Concepts, with automatic analysis of your code and _**personal mentoring**_, all _**100% free.**_
+Exercism’s free Python Track for access to 129 exercises grouped into 15 Python Concepts.   
 
 ----
 
@@ -200,7 +208,7 @@ Join Exercism’s Python Track for access to _**129 exercises**_ grouped into 15
 
 [stepik.org/course/568](https://stepik.org/course/568/promo)
 
-"The course consists of few hundreds of programming assignments for Python, ranging from basics up to complex topics. Right now Stepik.org is developing an adaptive learning engine which chooses content for each learner individually – by his/her level and knowledge gaps. In this course you can try out the first prototype of this engine."
+"The course consists of few hundreds of programming assignments for Python, ranging from basics up to complex topics. Right now Stepik is developing an adaptive learning engine which chooses content for each learner individually – by his/her level and knowledge gaps. In this course you can try out the first prototype of this engine."
 
 ----
 
