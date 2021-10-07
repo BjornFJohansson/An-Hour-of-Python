@@ -153,9 +153,7 @@ Start Spyder from the start menu of your computer. Open the file using the file>
 
 Spyder has two important parts, the text editor to the left and the interactive console to the right at the bottom.
 
-
-
-
+We will go through the content of ```spyder_session.py``` together.
 
 ### After the class, where to go from here?
 
