@@ -1,4 +1,4 @@
-Installing Anaconda
+# Installing Anaconda
 
 The Anaconda Scientific Python distribution from Continuum analytics is
 a nice way to install python on any computer. Anaconda makes it easier
@@ -7,7 +7,7 @@ installation is located in a folder in the user's directory in a folder
 that is easily removable. Anaconda is available for the Microsoft
 Windows, MacOSX and Linux platforms.
 
-Anaconda installation
+## Anaconda installation
 
 Go to the [website](https://store.continuum.io/cshop/anaconda/) of
 Anaconda (Fig ). Download the Anaconda installation file for your
