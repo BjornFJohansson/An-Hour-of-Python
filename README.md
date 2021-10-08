@@ -1,4 +1,4 @@
-# An-Hour-of-Python ![hourglass](pics/hourglass_small.png) 
+# An-Hour-of-Python ![hourglass](pics/hourglass_small.png)
 
 ### Programming?
 
@@ -35,7 +35,7 @@ int main()
 }
 ```
 
-#### Python 
+#### Python
 
 ```python
 # This Python program prints Hello, World!
@@ -77,7 +77,7 @@ Python will be used to search sequence data on Genbank using [pydna](https://git
 The Anaconda Scientific Python distribution from Continuum analytics is
 a nice way to install python on any computer.
 
-Anaconda makes it easier to install Python pacckages and it is avalible for free. The the whole installation is located in a folder in the user's directory that is easy to remove. 
+Anaconda makes it easier to install Python pacckages and it is avalible for free. The the whole installation is located in a folder in the user's directory that is easy to remove.
 
 Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms.
 
@@ -144,7 +144,7 @@ Type the text below in the console window in the lower right corner:
 
 The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
 
-Download and save the file [```spyder_session.py```](spyder_session.py) on your desktop.
+Download and save the file [```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py) on your desktop.
 
 Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like below:
 
@@ -196,7 +196,7 @@ Here you'll find resources for learning to program in Python for people with a b
 ----
 
 [Want to learn and master Python?](https://exercism.org/tracks/python)
-Exercism’s free Python Track for access to 129 exercises grouped into 15 Python Concepts.   
+Exercism’s free Python Track for access to 129 exercises grouped into 15 Python Concepts.
 
 ----
 
