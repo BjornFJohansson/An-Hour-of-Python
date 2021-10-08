@@ -104,7 +104,7 @@ area # Area now gets a new value
 
 # try to access an undefined variable
 
-n  
+n
 
 # Other datatypes
 # We learned that Python has int and float to represent numbers.
@@ -146,7 +146,7 @@ mystring[5:7]
 # A list can be made using square brackets []
 # We can mix varables in a list:
 
-mylist = [1, "Item1", 3.14, "pi"]
+mylist = [1, "Item1", 3.14, "pizza"]
 
 # We can look at each element in a list
 
@@ -160,7 +160,10 @@ mylist[0:2]
 mylist[1:3]
 
 # IMPORTANT! lists have ZERO based indexing
+# look in the link below for more information
 # https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types
+
+# This is a source of many errors.
 
 mylist[::2] # We can look at every second delement.
 
@@ -252,16 +255,7 @@ import this # The Zen of Python
 
 
 
-### Program flow control statements are "if", "for", and "while".
-
-if 3>2:
-    print("Three is bigger.") # This is a codeblock
-    print("than two.")        #
-elif 3<2:     # elif is a contraction of "else - if"
-    print("Three is smaller than two.") # This is another codeblock
-
-# codeblocks are treated as a group of code.
-# 
+### Program flow control statements are "for", "if" and "while".
 
 # Repetition with the for statement
 # lets bring back our list from before:
@@ -269,7 +263,7 @@ elif 3<2:     # elif is a contraction of "else - if"
 mylist
 
 for element in mylist: # for accepts list, string, dict and other "container" types.
-    print(element)
+    print(element) # codeblocks are treated as a group of code.
     
 
 for element in range(5): # We can make a list if we do not have one.
@@ -281,7 +275,44 @@ list(range(10)) # list is another built-in function
 
 for letter in "python": # we can loop over the letters in a string
     print(letter)
+    
+# The "if" statement
 
+if 3>2:
+    print("Three is bigger.") # This is a codeblock
+    print("than two.")        #
+elif 3<2: 
+    print("Three is smaller than two.") # This is another codeblock
+
+# elif is a contraction of "else - if"
+
+# "if" takes a boolean test that is either True or False
+
+True
+
+False
+
+# boolean statements:
+
+1==1 # Common error! "=" vs "=="; Assignment vs test
+
+1==2
+
+1>2
+
+2>1
+
+1>=1
+
+1<=1
+
+2>=1
+
+2<=1
+
+"a" == "b"
+
+"a" == "b"
 
 # Repetition with the while statement
 
@@ -352,7 +383,7 @@ print("Hello", name, ":)")
 
 # pCAPs cloning of a 0.5 kb fragment
 # using pydna
-# 
+# see Schlieper et al. 1998 pdf in repository
 
 
 from pydna.amplify import pcr
