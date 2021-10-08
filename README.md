@@ -144,7 +144,7 @@ Type the text below in the console window in the lower right corner:
 
 The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
 
-Download and save the file [```spyder_session.py```](spyder_session.py) on your desktop.
+Download and save the file [```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py) on your desktop.
 
 Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like below:
 
@@ -221,4 +221,3 @@ Pythonroom lets anyone teach computer science.
 ----
 
 [The Python Handbook](https://www.freecodecamp.org/news/the-python-handbook)
->>>>>>> develop

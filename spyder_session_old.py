@@ -33,8 +33,6 @@
 |_|    \__, |\__|_| |_|\___/|_| |_|
         __/ |                      
         |___/
-
-Version 1.0.0
 """
 
 # There are two ways to interact with python, interactively or by 
@@ -117,12 +115,6 @@ n
 # There are the aditional data types "tuple" and "set", but we
 # will leave them for now.
 
-
-
-
-
-
-
 # A string is good for holding text:
 
 mystring = "This is a text"
@@ -137,45 +129,23 @@ mystring[2]
 
 mystring[5:7]
 
-
-
-
-
-
 # A list is good for holding an ordered collection of variables
 # A list can be made using square brackets []
 # We can mix varables in a list:
 
-mylist = [1, "Item1", 3.14, "pi"]
+mylist = [1, "Item1", 3.14]
 
 # We can look at each element in a list
 
 mylist[1]
 
 # We can also look at parts of a list (a "slice")
-# list slice ->  mylist[start:stop:step]
 
 mylist[0:2]
-
-mylist[1:3]
-
-# IMPORTANT! lists have ZERO based indexing
-# https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types
-
-mylist[::2] # We can look at every second delement.
-
-mylist[::-1] # We can turn the list around using a negative step.
 
 # We can delete a list element using the command "del"
 
 del mylist[1]
-
-mylist + mylist # We can add two lists together
-
-
-
-
-
 
 # A dictionary (datatype: dict) is a collection of keys and values
 # We can mix datatypes for both keys and values
@@ -202,15 +172,8 @@ print("Hello!")  # Does *not* return anything
 
 len(mylist)
 
-
-
-
-
-
-
-# More functions!
-# There are also user defined functions.
-# We can package code in a function so that we can reuse the code.
+# There are also user defined functions
+# We can package code in a function so that we can reuse it.
 
 def triangle_area(height, width):  # a function name can have no spaces. height, width are arguments
     area = height * width / 2      # This is a **block** of code.
@@ -219,15 +182,12 @@ def triangle_area(height, width):  # a function name can have no spaces. height,
 
 triangle_area(3, 4)
 
-triangle_area(30, 40)
-
 
 # The **block** of code is important. That is how Python knows
-# what code belongs to the function.
+# what belongs to the function
 # Remember this concept, it will be important later.
 
 # Import modules for more functions and other useful things.
-# Modules are simply collections of useful fucntions.
 
 import pydna
 
@@ -246,49 +206,30 @@ import this # The Zen of Python
 # Modules are practical if you do not want to have everything in the same
 # file. 
 
-
-
-
-
-
-
 ### Program flow control statements are "if", "for", and "while".
 
 if 3>2:
     print("Three is bigger.") # This is a codeblock
-    print("than two.")        #
-elif 3<2:     # elif is a contraction of "else - if"
+    print("than two.") 
+if 3<2:
     print("Three is smaller than two.") # This is another codeblock
 
-# codeblocks are treated as a group of code.
-# 
+# codeblocks are treated as a group of code
 
 # Repetition with the for statement
-# lets bring back our list from before:
 
 mylist
 
 for element in mylist: # for accepts list, string, dict and other "container" types.
     print(element)
-    
-
-for element in range(5): # We can make a list if we do not have one.
-    print(element)
-
-range(10)
-list(range(10)) # list is another built-in function 
-
-
-for letter in "python": # we can loop over the letters in a string
-    print(letter)
-
 
 # Repetition with the while statement
 
 i = 0
 while i < 5:
     print(i)
-    i = i + 1
+    i = i +1
+    
 
 
 
@@ -311,31 +252,21 @@ myinput
 # Save the two lines below as a new file called HelloWorld.py
 
 name = input("what is your name? ")
+
 print("Hello", name, ":)")
 
 
 
-# Our first Program with our first Function :)
-# A function that returns the reverse complement of a DNA sequence.
-# Add user input to the function and print its result.
+# Our first Function :)
+# A function that returns the reverse complement 
+
 
 # Your task is to define a function called "reverse_complement".
-# The function should take one argument that is a string.
-# This string is a DNA sequence.
-# The function should return another string
-# The returned string should be the reverse complement of a DNA sequence 
+# The function should take one argument that is a string
+# This string is a 
+# The function should return the reverse complement of a DNA sequence 
 
-# For example
-# reverse_complement("tggcta"); should return "tagcca".
-
-# an simple algorithm:
-# 1 asking user input and storing this is a variable
-# 2 feeding the variable to our function
-# 3 complementing each nucleotide in a for loop inside the function
-# 4 return the result
-# 4 printing out the reverse-complement.
- 
-# http://shadarf.blogspot.com/2017/07/how-to-make-reverse-complement-of-dna.html
+# For example, if seq is "tggcta", the function should return "tagcca".
 
 
 
@@ -343,16 +274,365 @@ print("Hello", name, ":)")
 
 
 
+    print(mylist[::2])
 
 
+        >>> print(range(10))
+    range(0, 10)
+    >>> rangelist = list(range(10))
+    >>> print(rangelist)
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    for number in range(10):
+        # Check if number is one of
+        # the numbers in the tuple.
+        if number in (3, 4, 7, 9):
+            # "Break" terminates a for without
+            # executing the "else" clause.
+            break
+        else:
+            # "Continue" starts the next iteration
+            # of the loop. It's rather useless here,
+            # as it's the last statement of the loop.
+            continue
+    else:
+        # The "else" clause is optional and is
+        # executed only if the loop didn't "break".
+        pass # Do nothing
+
+    if rangelist[1] == 2:
+        print("The second item (lists are 0-based) is 2")
+    elif rangelist[1] == 3:
+        print("The second item (lists are 0-based) is 3")
+    else:
+        print("Dunno")
+
+    while rangelist[1] == 1:
+        print("We are trapped in an infinite loop!")
+
+
+
+In [35]: if value>2:
+
+    ...:     print "good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: else:
+
+    ...:     print "really good"
+
+good
+
+
+
+In [36]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>2:
+
+    ...:     print "really good"
+
+    ...:     
+
+really good
+
+
+
+In [37]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>2:
+
+    ...:     print "good"
+
+really good
+
+
+
+In [38]: value
+
+Out[38]: 20
+
+
+
+In [39]: value=1
+
+
+
+In [40]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>2:
+
+    ...:     print "good"
+
+
+
+In [41]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>2:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+not defined!
+
+
+
+In [42]: value=2
+
+
+
+In [43]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>2:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+not defined!
+
+
+
+In [44]: if value>10:
+
+    ...:     print "really good"
+
+    ...: elif value>5:
+
+    ...:     print "better"
+
+    ...: elif value>=2:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+good
+
+
+
+In [45]: if value>=10:
+
+    ...:     print "really good"
+
+    ...: elif value>=5:
+
+    ...:     print "better"
+
+    ...: elif value>=2:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+good
+
+
+
+In [46]: if 10=<value:
+
+    ...:     print "really good"
+
+    ...: elif 5=<value<10:
+
+    ...:     print "better"
+
+    ...: elif 2=<value<5:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+  File "<ipython-input-46-de68f1112b6d>", line 1
+
+    if 10=<value:
+
+         ^
+
+SyntaxError: invalid syntax
+
+
+
+
+
+In [47]: if 10<=value:
+
+    ...:     print "really good"
+
+    ...: elif 5<=value<10:
+
+    ...:     print "better"
+
+    ...: elif 2<=value<5:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+good
+
+
+
+In [48]: value=5
+
+
+
+In [49]: if 10<=value:
+
+    ...:     print "really good"
+
+    ...: elif 5<=value<10:
+
+    ...:     print "better"
+
+    ...: elif 2<=value<5:
+
+    ...:     print "good"
+
+    ...: else:
+
+    ...:     print "not defined!"
+
+better
+
+
+
+In [50]: def myfunc(value):
+
+    ...:     if 10<=value:
+
+    ...:         print "really good"
+
+    ...:     elif 5<=value<10:
+
+    ...:         print "better"
+
+    ...:     elif 2<=value<5:
+
+    ...:         print "good"
+
+    ...:     else:
+
+    ...:         print "not defined!"
+
+
+
+In [51]: myfunc(20)
+
+really good
+
+
+
+In [52]: myfunc(1)
+
+not defined!
+
+
+
+In [53]: myfunc(5)
+
+better
+
+
+
+In [54]: def myfunc(value)
+
+    ...:     if 10<=value:
+
+    ...:         print "really good"
+
+    ...:     elif 5<=value<10:
+
+    ...:         print "better"
+
+    ...:     elif 2<=value<5:
+
+    ...:         print "good"
+
+    ...:     else:
+
+    ...:         print "not defined!"
+
+  File "<ipython-input-54-74ab83858810>", line 1
+
+    def myfunc(value)
+
+                     ^
+
+SyntaxError: invalid syntax
+
+
+
+
+
+In [55]: def myfunc(value)
+
+    ...:     if 10<=value:
+
+    ...:         print "really good"
+
+    ...:     elif 5<=value<10:
+
+    ...:         print "better"
+
+    ...:     elif 2<=value<5:
+
+    ...:         print "good"
+
+    ...:     else:
+
+    ...:         print "not defined!"
 
 
 
 
 
 # pCAPs cloning of a 0.5 kb fragment
-# using pydna
-# 
 
 
 from pydna.amplify import pcr
@@ -385,11 +665,9 @@ pcr_prod = pcr(f, r, Lambda)
 
 pcr_prod
 
-pcr_prod.figure()
-
 # https://www.ncbi.nlm.nih.gov/nuccore/AJ001614
 
-pcaps = gb.nucleotide("AJ001614.1")
+pcaps = genbank("AJ001614.1")
 
 pcaps
 
@@ -401,8 +679,6 @@ pcaps_w_insert = (pcaps_linear + pcr_prod).looped()
 
 pcaps_w_insert.seq
 
-from pydna.editor import ape
-ape(pcaps_w_insert)
 
 
 
