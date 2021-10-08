@@ -144,7 +144,7 @@ Type the text below in the console window in the lower right corner:
 The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
 
 
-![[```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py)](BUTTON-d-2.jpg)
+[![[spyder_session](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py)](pics/BUTTON-d-2.jpg)
 
 Download and save the file [```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py) on your desktop.
 
