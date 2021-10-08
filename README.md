@@ -81,10 +81,9 @@ Anaconda makes it easier to install Python pacckages and it is avalible for free
 
 Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms.
 
-Go to the [website](https://store.continuum.io/cshop/anaconda) of
-Anaconda (Fig ). Download the Anaconda installation file for your
-operating system and follow the installation instructions and select
-default options whenever applicable. Beware that the installation file is large ~400 mb.
+Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda). 
+Download the Anaconda installation file for your operating system and follow the installation instructions to save the file.
+Beware that the installation file is large ~400 mb.
 
 Double click the installer and follow the instructions. Select default options when asked.
 
@@ -157,6 +156,7 @@ We will go through the content of ```spyder_session.py``` together.
 
 ### After the class, where to go from here?
 
+I hope this hour has inspired you to learn how to code with Pyhton or another programming language. 
 As any new language that you might try to learn, you will lose your new knowledge if you do not practise. The challenge is to practise by finding something in your daily life, however small, where you can apply programming to save time or improve quality.
 
 Here is a list of ten suggested programming [projects](https://favtutor.com/blog-details/7-Python-Projects-For-Beginners) for beginners.
