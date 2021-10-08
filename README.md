@@ -162,10 +162,6 @@ As any new language that you might try to learn, you will lose your new knowledg
 Here is a list of ten suggested programming [projects](https://favtutor.com/blog-details/7-Python-Projects-For-Beginners) for beginners.
 
 
-### How do I use Python?
-
-
-
 
 ### Resources
 
