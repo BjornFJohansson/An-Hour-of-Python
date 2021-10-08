@@ -81,7 +81,7 @@ Anaconda makes it easier to install Python pacckages and it is avalible for free
 
 Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms.
 
-Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda). 
+Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda).
 Download the Anaconda installation file for your operating system and follow the installation instructions to save the file.
 Beware that the installation file is large ~400 mb.
 
@@ -143,7 +143,14 @@ Type the text below in the console window in the lower right corner:
 
 The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
 
+
+![[```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py)](BUTTON-d-2.jpg)
+
 Download and save the file [```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py) on your desktop.
+
+
+
+
 
 Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like below:
 
@@ -156,7 +163,7 @@ We will go through the content of ```spyder_session.py``` together.
 
 ### After the class, where to go from here?
 
-I hope this hour has inspired you to learn how to code with Pyhton or another programming language. 
+I hope this hour has inspired you to learn how to code with Pyhton or another programming language.
 As any new language that you might try to learn, you will lose your new knowledge if you do not practise. The challenge is to practise by finding something in your daily life, however small, where you can apply programming to save time or improve quality.
 
 Here is a list of ten suggested programming [projects](https://favtutor.com/blog-details/7-Python-Projects-For-Beginners) for beginners.

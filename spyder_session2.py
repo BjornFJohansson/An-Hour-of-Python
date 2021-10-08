@@ -87,6 +87,7 @@ width = 3
 
 width
 
+
 height = 4
 
 area = width * height
@@ -188,8 +189,6 @@ mydict = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
 
 mydict["e"] = 2.718  # This is how you add a dictionary value.
 
-
-
 # functions (built-in)
 # A function is a "factory" that accepts input (arguments)
 # and returns a result.
@@ -264,7 +263,7 @@ import this # The Zen of Python
 mylist
 
 for element in mylist: # for accepts list, string, dict and other "container" types.
-    print(element)     # codeblocks are treated as a group of code.
+    print(element) # codeblocks are treated as a group of code.
     
 
 for element in range(5): # We can make a list if we do not have one.
@@ -334,7 +333,7 @@ list(range(1, 10))
 
 # input to get input from the user
 
-myinput = input("write something here. ")
+myinput = input("write something here.")
 
 myinput
 
@@ -370,20 +369,12 @@ print("Hello", name, ":)")
 # http://shadarf.blogspot.com/2017/07/how-to-make-reverse-complement-of-dna.html
 
 
-def reverse_complement(dna):
-    newdna = ""
-    for letter in dna:
-        if letter == "a":
-            newdna = newdna + "t"
-        if letter == "t":
-            newdna = newdna + "a"
-        if letter == "c":
-            newdna = newdna + "g"
-        if letter == "g":
-            newdna = newdna + "c"
-    return newdna[::-1]
 
-reverse_complement("tggcta")
+
+
+
+
+
 
 
 
