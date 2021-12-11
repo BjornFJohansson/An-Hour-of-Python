@@ -10,6 +10,8 @@ Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2):
 
 I fully agree with this, programming is not just a way to solve problems or get things done, but it can be so much more.
 
+[![xkcd](https://imgs.xkcd.com/comics/11th_grade.png)](https://xkcd.com)
+
 As you progress to gain more knowledge, you will see how your coding skills can affect the ways you think. After all, if you know a problem well enough to describe it to a computer, you probably know it better than most. This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
 
 ### Python :snake:
