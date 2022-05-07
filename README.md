@@ -2,6 +2,8 @@
 
 ### Programming?
 
+![steve](pics/stevejobs.png)
+
 Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2):
 
 
@@ -40,14 +42,30 @@ int main()
 ```python
 # This Python program prints Hello, World!
 print("Hello, World! \n")
-```
 
-This is not to say that one language is necessarily better than another for all purposes. However, it is safe to say that Python is one of the best for beginners.
+```
+The goal of the program is to print the message "Hello World!" on the screen, which is probably obvious. I think most people would agree that the Python version is more intuitive.
+
+This is not to say that one computer language (such as Python) is necessarily better than another for all purposes. However, it is safe to say that Python is probably one of the best for beginners.
 
 Because of its simplicity, Python is suitable both for beginners and for people who do not code every day (like me). It is suitable both for quick scripts for automation of some repetitive task but also for complex software with graphical interfaces and websites.
 
 
 One of the most important advantages of Python is the **large size of its community**, since this means that you can often find questions and answers to your coding problems by a simply searching with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
+
+An added benefit is the large variety of functionality that has been created and made available in software packages.
+
+A software package is a collection of files, usually to solve common problems in a specific area such as statistics or bioinformatics, that has been packaged for distribution and installation.
+
+Widely used Python packages include:
+- Numpy - comprehensive mathematical functions
+- SciPy - algorithms for optimization, integration, interpolation
+- Biopython - tools for biological computation
+- Pandas - data analysis and manipulation
+- Matplotlib - static, animated, and interactive visualizations
+ - scikit-learn - efficient tools for predictive data analysis and machine learning
+ - NLTK - programs to work with human language data
+ - Pillow - powerful image processing
 
 Python is used for everything from
 
@@ -66,7 +84,7 @@ You can even make games using Python:
 
 
 
-We will spend one hour learning the basics of Python using simple examples. The exercises are aimed at complete beginners with no previous programming experience.
+We will spend one hour (or so) learning the basics of Python using simple examples. The exercises are aimed at complete beginners with no previous programming experience.
 
 The tutor will demonstrate basic data types, repetition and decision making in the logical flow of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated development environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
 
@@ -74,70 +92,20 @@ Python will be used to search sequence data on Genbank using [pydna](https://git
 
 ### Installation
 
-The Anaconda Scientific Python distribution from Continuum analytics is
-a nice way to install python on any computer.
+The free Anaconda Scientific Python distribution from Continuum analytics is
+a nice way to install python on just about any computer. Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms. Anaconda makes it easy to install Python packages with extra functionality. The the whole installation is located in one folder in the user's directory that is easy to uninstall.
 
-Anaconda makes it easier to install Python pacckages and it is avalible for free. The the whole installation is located in a folder in the user's directory that is easy to remove.
 
-Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms.
-
-Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda).
-Download the Anaconda installation file for your operating system and follow the installation instructions to save the file.
-Beware that the installation file is large ~400 mb.
+Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda) and
+download the Anaconda installation file for your operating system. Follow the installation instructions to save the file.  Beware that the installation file is large ~600 mb.
 
 Double click the installer and follow the instructions. Select default options when asked.
 
-For installation on Linux, type: ```bash Anaconda3-2021.05-Linux-x86_64.sh```. in the terminal. **If you have any trouble with this step, check the detailed instructions [here](https://docs.anaconda.com/anaconda/install).**
+For installation on Linux, type: ```bash Anaconda3-2021.05-Linux-x86_64.sh```. in the terminal to start the installation
 
-The next step is to start the Anaconda Navigator. How to do this may differ between platforms. The MacOSX installer leaves a green Anaconda shortcut on the desktop. On Windows, there is a shortcut in the launcher:
+**If you have any trouble installing, check the detailed instructions [here](https://docs.anaconda.com/anaconda/install).**
 
-![start_navigator](pics/start_navigator.png)
-
-Anaconda Navigator looks like this:
-
-
-![navigator](pics/navigator.png)
-
-
-It is sometimes necessary the tell Anaconda where to find useful software. We can do this by adding a software channel. Click on the “**Channels**” link in the upper right corner of the window. Add the channel ```BjornFJohansson``` as shown below and press return.
-
-
-![add_channel](pics/add_channel.png)
-
-
-
-When The “conda-forge” channel may not be present on your computer. It
-is not needed. The important thing is that the
-**BjornFJohansson** channel is at the end.
-
-Follow the five steps below to install the pydna python package:
-
-- ![](https://via.placeholder.com/15/f03c15/000000?text=+) 1 Activate the “Environments” tab
-- ![](https://via.placeholder.com/15/00ff00/000000?text=+) 2 Select “all”
-- ![](https://via.placeholder.com/15/ffa500/000000?text=+) 3 type “pydna” in the text box
-- ![](https://via.placeholder.com/15/1e90ff/000000?text=+) 4 Click the checkbox
-- ![](https://via.placeholder.com/15/ff00ff/000000?text=+) 5 Click “Apply”
-
-
-
-
-![install_pydna](pics/install_pydna.png)
-
-Verify installation
-
-Start “Spyder” from the start menu of your computer.
-
-Type the text below in the console window in the lower right corner:
-
-    import pydna ⮠
-
-    pydna.__version__⮠
-
-(⮠ = return key).
-
-![spyder2](pics/spyder2.png)
-
-
+The next step is to start the Python editor Spyder.  Start “Spyder” from the start menu of your computer.
 
 # Exercises
 
@@ -186,9 +154,15 @@ Here is a list of ten suggested programming [projects](https://favtutor.com/blog
 
 Rosalind is a platform for learning bioinformatics through problem solving.
 
+
 ----
 
-[Python in you browser](https://replit.com)
+[LeetCode](https://leetcode.com)
+is an online judge platforms that you can use to practice your programming skills by solving coding questions.
+
+----
+
+[Python in your browser](https://replit.com)
 
 ----
 
