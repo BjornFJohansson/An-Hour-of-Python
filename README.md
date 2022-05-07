@@ -135,7 +135,7 @@ Download and save the file [```spyder_session.py```](https://raw.githubuserconte
 
 
 
-Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like below:
+Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like in the picture below:
 
 ![spyder](pics/spyder.png)
 
