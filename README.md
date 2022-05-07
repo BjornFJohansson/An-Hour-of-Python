@@ -2,7 +2,7 @@
 
 ### Programming?
 
-![steve](pics/stevejobs.png)
+[![steve](pics/stevejobs.png)](https://youtu.be/IY7EsTnUSxY?t=2)
 
 Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2):
 
