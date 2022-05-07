@@ -59,7 +59,7 @@ The goal of the program is to print the message "Hello World!" on the screen, wh
 
 This is not to say that one computer language (such as Python) is necessarily better than another for all purposes. However, it is safe to say that Python is probably one of the best for beginners.
 
-Because of its simplicity, Python is suitable both for beginners and for people who do not code every day (like me). It is suitable both for quick scripts for automation of some repetitive task but also for complex software with graphical interfaces and websites.
+Because of its simplicity, Python is suitable for people who do not code every day (like me). It is suitable both for quick scripts for automation of some repetitive task but also for complex software with graphical interfaces and websites.
 
 
 One of the most important advantages of Python is the **large size of its community**, since this means that you can often find questions and answers to your coding problems by a simply searching with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
@@ -99,9 +99,9 @@ We will spend one hour (or so) learning the basics of Python using simple exampl
 
 The tutor will demonstrate basic data types, repetition and decision making in the logical flow of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated development environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
 
-Python will be used to search sequence data on Genbank using [pydna](https://github.com/BjornFJohansson/pydna) and formalize a simple cloning procedure.
 
 ### Installation
+
 
 The free Anaconda Scientific Python distribution from Continuum analytics is
 a nice way to install python on just about any computer. Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms. Anaconda makes it easy to install Python packages with extra functionality. The the whole installation is located in one folder in the user's directory that is easy to uninstall.
