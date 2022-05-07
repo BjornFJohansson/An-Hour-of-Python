@@ -7,7 +7,7 @@
 Steve Jobs once [said](https://youtu.be/IY7EsTnUSxY?t=2):
 
 
-“Everybody in this country should learn to program a computer, because it teaches you how to think”.
+“**Everybody in this country should learn to program a computer, because it teaches you how to think**”.
 
 
 I fully agree with this, programming is not just a way to solve problems or get things done, but it can be so much more.
