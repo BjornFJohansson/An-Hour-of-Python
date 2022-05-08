@@ -1,4 +1,5 @@
-# An-Hour-of-Python ![hourglass](pics/hourglass_small.png)
+# An-Hour-of-Python
+![hourglass](pics/hourglass_small.png)
 
 ### Programming?
 
