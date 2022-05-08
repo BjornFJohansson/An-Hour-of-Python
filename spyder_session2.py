@@ -34,42 +34,24 @@
         __/ |                      
         |___/
 
-Version 1.1.0
+Version 1.0.0
 """
 
-
-
-
 # There are two ways to interact with python, interactively or by 
-# saving a text file with the extension ".py" like this file.
-
-
-
-
-
-
- 
+# saving a text file with python code as a ".py" file. 
 # Using python interactively will give us a response to each command. 
 
-# This is good for testing out python code lines.
-
-# For programs with several code lines, it is bettwe to save tem in a ".py"
-# file.
-
-
-
-
+# This is good for testing out python code lines, while writing and saving a
+# python program ".py" file is good for 
 
 # Lets get used to the interpreter interactively:
 
-# Lines in this document starting with "#" are comments and ignored by Python
+# Lines starting with "#" are comments and ignored by Python
 
     
 
 
-# An integer number (type: int):
-# select the number and click on the "Run selection or current line" button
-# above.
+# An integer (type: int):
 
 5
 
@@ -95,15 +77,8 @@ Version 1.1.0
 
 2 ** 7  # 2 to the power of 7
 
-25/7    # Normal division
-
-25//7   # Floor division
-
-25 % 7  # Modulo division
-
-
-# The equal sign (=) is used to **assign** a
-# value to a **variable name**. The value of a name is remembered
+# The equal sign (=) is used to **assign** a 
+# value to a **variable**. The value of a variable is remembered
 # until you leave the Python interpreter.
 
 width = 3
@@ -112,15 +87,14 @@ width = 3
 
 width
 
-height = 4
 
-# We can do calculations with variables
+height = 4
 
 area = width * height
 
 area
 
-width = 4 # We can assign a new value that replaces the old value
+width = 4 # This replaces the old value
 
 width
 
@@ -128,9 +102,9 @@ area = width * height
 
 area # Area now gets a new value
 
-# try to access an undefined variable:
+# try to access an undefined variable
 
-# n
+n
 
 # Other datatypes
 # We learned that Python has int and float to represent numbers.
@@ -147,65 +121,29 @@ area # Area now gets a new value
 
 
 
-# A string is good for holding text
-# it is made using "" or '' or """
+
+
+# A string is good for holding text:
 
 mystring = "This is a text"
 
-mystring # This will give us the content of "mystring"
-
-# We can look at each letter in a string. This is called slicing.
-# The index **always** starts at 0!
+# We can look at each letter in a string
 
 mystring[0]
 
 mystring[2]
 
-#  This is a text
-#  01234567891111         letters 0 .. 13
-#            0123
-
-
-mystring[13]
-
-# Negative index: 
-
-#  This is a text
-#  11119876543210         letters -1 .. - 14
-#  3210
-
-mystring[-1]
-
-mystring[-14]
-
-# We can look at parts of a string (a "slice").
+# We can look at parts of a string (a "slice"), and important concept.
 
 mystring[5:7]
 
-# We can look at second to second last letter
-
-mystring[1:-1]
 
 
-multiline = """This text
-has two lines"""
-
-# a new line is denoted by “\n”, also called a Line Feed
 
 
-multiline
 
-# We can add two strings
-
-mystring + mystring
-
-
-# A list is good for holding an ordered collection of variables or "objects"
+# A list is good for holding an ordered collection of variables
 # A list can be made using square brackets []
-# Lists and strings are similar in many ways, but lists can hold any object
-# strings can only hold 
-
-
 # We can mix varables in a list:
 
 mylist = [1, "Item1", 3.14, "pizza"]
@@ -217,21 +155,17 @@ mylist[1]
 # We can also look at parts of a list (a "slice")
 # list slice ->  mylist[start:stop:step]
 
-mylist[0:2]    # Lists have ZERO based indexing, just like strings
+mylist[0:2]
 
 mylist[1:3]
 
-mylist[1:-1]  # Slicing works the same as for string
-
-
-
+# IMPORTANT! lists have ZERO based indexing
 # look in the link below for more information
 # https://railsware.com/blog/python-for-machine-learning-indexing-and-slicing-for-lists-tuples-strings-and-other-sequential-types
 
+# This is a source of many errors.
 
-# Slice     [start:stop:step]
-
-mylist[::2] # We can look at every second element.
+mylist[::2] # We can look at every second delement.
 
 mylist[::-1] # We can turn the list around using a negative step.
 
@@ -240,7 +174,6 @@ mylist[::-1] # We can turn the list around using a negative step.
 del mylist[1]
 
 mylist + mylist # We can add two lists together
-
 
 
 
@@ -256,58 +189,6 @@ mydict = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
 
 mydict["e"] = 2.718  # This is how you add a dictionary value.
 
-
-
-# A boolean variable is either True or False
-
-True
-
-False
-
-# boolean statements:
-
-1==1 # This is a very common error "=" vs "=="; Assignment vs test
-
-1==2
-
-1>2
-
-2>1
-
-1>=1
-
-1<=1
-
-2>=1
-
-2<=1
-
-"a" == "b"
-
-"a" == "b"
-
-
-# Boolean operators
-
-True and True
-
-True and False
-
-True or True
-
-True or False
-
-False or True
-
-not True
-
- 
-True and not True
-
-True or not True
-
-
-
 # functions (built-in)
 # A function is a "factory" that accepts input (arguments)
 # and returns a result.
@@ -316,55 +197,13 @@ True or not True
 
 #   f(x) = 2x + 3
 
+# The type function is very useful. It returns the datatype of a variable.
 
+type(mydict)
 
-# The type function is very useful when looking for errors.
-# It returns the datatype of a variable.
+print("Hello!")  # Does *not* return anything
 
-
-mystring = "This is a text."
-
-type(mystring)
-
-# The type function returns a result that we can save
-
-x = type(mystring)
-
-x
-
-print("Hello!")  # Does *not* return anything. Common source of error.
-
-y = print("Hello!")
-
-y
-
-# length of a list
-
-basket = ['bread', 'butter', 'milk']
-
-len(basket)
-
-
-# length of a string
-
-len(mystring)
-
-# 
-
-z = input("Write something here:")
-
-z
-
-
-sorted([3,4,1,2,9])
-
-list("qwerty")
-
-list(range(1,10)) 
-
-int(3.14)
-
-str(3.14)
+len(mylist)
 
 
 
@@ -372,13 +211,9 @@ str(3.14)
 
 
 
-
-
-
-
-# We can package code in a function so that we can reuse the code.
+# More functions!
 # There are also user defined functions.
-
+# We can package code in a function so that we can reuse the code.
 
 def triangle_area(height, width):  # a function name can have no spaces. height, width are arguments
     area = height * width / 2      # This is a **block** of code.
@@ -394,23 +229,12 @@ triangle_area(30, 40)
 # what code belongs to the function.
 # Remember this concept, it will be important later.
 
-
-
-
-
-
 # Import modules for more functions and other useful things.
-# Modules are simply collections of useful functions.
+# Modules are simply collections of useful fucntions.
 
-# The import statement:
-    
-import this
+import pydna
 
-import math
-
-math.pi
-
-math.log
+pydna.logo()
 
 from math import pi
 
@@ -439,7 +263,7 @@ import this # The Zen of Python
 mylist
 
 for element in mylist: # for accepts list, string, dict and other "container" types.
-    print(element)     # codeblocks are treated as a group of code.
+    print(element) # codeblocks are treated as a group of code.
     
 
 for element in range(5): # We can make a list if we do not have one.
@@ -468,7 +292,27 @@ True
 
 False
 
+# boolean statements:
 
+1==1 # Common error! "=" vs "=="; Assignment vs test
+
+1==2
+
+1>2
+
+2>1
+
+1>=1
+
+1<=1
+
+2>=1
+
+2<=1
+
+"a" == "b"
+
+"a" == "b"
 
 # Repetition with the while statement
 
@@ -476,15 +320,6 @@ i = 0
 while i < 5:
     print(i)
     i = i + 1
-
-# Check condition at the end
-
-i = 0
-while True:
-    print(i)
-    i = i + 1
-    if i>4:
-        break
 
 
 
@@ -498,7 +333,7 @@ list(range(1, 10))
 
 # input to get input from the user
 
-myinput = input("write something here. ")
+myinput = input("write something here.")
 
 myinput
 
@@ -511,33 +346,112 @@ print("Hello", name, ":)")
 
 
 
-# Programming task: Number guessing game
-# The computer will think of a number between 0 and 20
-# The user should make a guess
-# The computer 
+# Our first Program with our first Function :)
+# A function that returns the reverse complement of a DNA sequence.
+# Add user input to the function and print its result.
 
-# How it should work:
+# Your task is to define a function called "reverse_complement".
+# The function should take one argument that is a string.
+# This string is a DNA sequence.
+# The function should return another string
+# The returned string should be the reverse complement of a DNA sequence 
 
-# Guess a number between 0 and 20 10
-# too high!
+# For example
+# reverse_complement("tggcta"); should return "tagcca".
 
-# Guess a number between 0 and 20 5
-# too high!
-
-# Guess a number between 0 and 20 2
-# Correct
-
-# Useful:
-
-from random import randint
-
-while True:
-    pass
-
-
-    
+# an simple algorithm:
+# 1 asking user input and storing this is a variable
+# 2 feeding the variable to our function
+# 3 complementing each nucleotide in a for loop inside the function
+# 4 return the result
+# 4 printing out the reverse-complement.
+ 
+# http://shadarf.blogspot.com/2017/07/how-to-make-reverse-complement-of-dna.html
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+# pCAPs cloning of a 0.5 kb fragment
+# using pydna
+# see Schlieper et al. 1998 pdf in repository
+
+
+from pydna.amplify import pcr
+from pydna.genbank import Genbank
+from pydna.parsers import parse_primers
+
+f,r = parse_primers("""
+
+>f
+GATGAGTTCGTGTCCGTACAACT
+
+>r
+GGTTATCGAAATCAGCCACAGCG
+
+""")
+
+f
+
+r
+
+gb = Genbank("bjornjobb@gmail.com")
+
+Lambda = gb.nucleotide("J02459.1")
+
+Lambda
+
+# https://en.wikipedia.org/wiki/Lambda_phage
+
+pcr_prod = pcr(f, r, Lambda)
+
+pcr_prod
+
+pcr_prod.figure()
+
+# https://www.ncbi.nlm.nih.gov/nuccore/AJ001614
+
+pcaps = gb.nucleotide("AJ001614.1")
+
+pcaps
+
+from Bio.Restriction import MluNI
+
+pcaps_linear = pcaps.linearize(MluNI)
+
+pcaps_w_insert = (pcaps_linear + pcr_prod).looped()
+
+pcaps_w_insert.seq
+
+from pydna.editor import ape
+ape(pcaps_w_insert)
+
+
+
+
+# Simple Plot
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for plotting
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s)
+
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+       title='About as simple as it gets, folks')
+ax.grid()
+
+plt.show()
