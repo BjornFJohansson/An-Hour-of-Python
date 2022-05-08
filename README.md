@@ -23,8 +23,8 @@ it to a computer, you probably know it better than most.
 [![ted](pics/ted.png)](https://youtu.be/xfBWk4nw440?t=24)
 
 
-This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) bu Christian Genco
-sums up the argument in a nice way. The speaker has a website [here](https://christian.gen.co/you-should-learn-to-program).
+This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) by [Christian Genco](https://christian.gen.co/you-should-learn-to-program)
+sums up the argument in a nice way.
 
 
 ### Python :snake:
