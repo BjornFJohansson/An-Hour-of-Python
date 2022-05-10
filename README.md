@@ -133,7 +133,8 @@ The Spyder editor was installed with the Anaconda distribution that you should h
 
 Download and save the file [```spyder_session.py```](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py) on your desktop.
 
-
+**IMPORTANT!** Save the file with a ".py" ending, sometimes MS Windows wants to add a ".txt" file type.
+This file will not be recognized by Spyder as a Python file.
 
 
 

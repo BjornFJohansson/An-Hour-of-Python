@@ -248,6 +248,8 @@ myfstring
 
 mylist = [1, "Item1", 3.14, "pizza"]
 
+mylist
+
 # We can look at each element in a list
 
 mylist[1]
@@ -295,7 +297,9 @@ mylist + mylist # We can add two lists together
 
 mydict = {"rain": "chuva", "umbrella": "guarda-chuva"}
 
-mydict = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
+mydict["umbrella"]
+
+mydict2 = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
 
 mydict["e"] = 2.718  # This is how you add a dictionary value.
 
@@ -313,7 +317,6 @@ mydict["e"] = 2.718  # This is how you add a dictionary value.
 # A boolean variable is either True or False
 
 True
-
 False
 
 # boolean statements:
@@ -334,7 +337,7 @@ False
 
 2<=1
 
-"a" == "b"
+"a" == "a"
 
 "a" == "b"
 
@@ -375,7 +378,7 @@ True or not True
 
 # Just like a mathematical function, for example:
 
-#   f(x) = 2x + 3
+#   f(x) = 2x + 3 = y
 
 
 
@@ -428,15 +431,15 @@ list("qwerty")
 
 # The range function returns a range type object
 
-range(1,10)
+range(1, 10)
 
-list(range(1,10)) 
+list(range(1,10))
 
 int(3.14)
 
 str(3.14)
 
-
+float("3.14")
 
 
 
