@@ -64,8 +64,13 @@ Version 1.1.0
 
 # Lines in this document starting with "#" are comments and ignored by Python
 
-    
-
+"""   
+ _   _                 _                   
+| \ | |_   _ _ __ ___ | |__   ___ _ __ ___ 
+|  \| | | | | '_ ` _ \| '_ \ / _ \ '__/ __|
+| |\  | |_| | | | | | | |_) |  __/ |  \__ \
+|_| \_|\__,_|_| |_| |_|_.__/ \___|_|  |___/
+"""                                                   
 
 # An integer number (type: int):
 # select the number and click on the "Run selection or current line" button
@@ -101,6 +106,15 @@ Version 1.1.0
 
 25 % 7  # Modulo division
 
+
+"""
+ __     __         _       _     _                           ___  _     _           _       
+ \ \   / /_ _ _ __(_) __ _| |__ | | ___  ___    ___  _ __   / _ \| |__ (_) ___  ___| |_ ___ 
+  \ \ / / _` | '__| |/ _` | '_ \| |/ _ \/ __|  / _ \| '__| | | | | '_ \| |/ _ \/ __| __/ __|
+   \ V / (_| | |  | | (_| | |_) | |  __/\__ \ | (_) | |    | |_| | |_) | |  __/ (__| |_\__ \
+    \_/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/  \___/|_|     \___/|_.__// |\___|\___|\__|___/
+                                                                     |__/                   
+"""
 
 # The equal sign (=) is used to **assign** a
 # value to a **variable name**. The value of a name is remembered
@@ -154,6 +168,15 @@ mystring = "This is a text"
 
 mystring # This will give us the content of "mystring"
 
+"""
+  ____  _ _      _             
+ / ___|| (_) ___(_)_ __   __ _ 
+ \___ \| | |/ __| | '_ \ / _` |
+  ___) | | | (__| | | | | (_| |
+ |____/|_|_|\___|_|_| |_|\__, |
+                         |___/ 
+"""
+
 # We can look at each letter in a string. This is called slicing.
 # The index **always** starts at 0!
 
@@ -199,12 +222,27 @@ multiline
 
 mystring + mystring
 
+# Useful! String formatting with fstrings
+
+name = "Zé"
+number = 12345
+
+myfstring = f"My name is {name} and my number is {number}"
+myfstring
 
 # A list is good for holding an ordered collection of variables or "objects"
 # A list can be made using square brackets []
 # Lists and strings are similar in many ways, but lists can hold any object
 # strings can only hold 
 
+"""
+  _     _     _   
+ | |   (_)___| |_ 
+ | |   | / __| __|
+ | |___| \__ \ |_ 
+ |_____|_|___/\__|
+                  
+"""
 
 # We can mix varables in a list:
 
@@ -242,10 +280,15 @@ del mylist[1]
 mylist + mylist # We can add two lists together
 
 
+"""
+  ____  _      _   _                              
+ |  _ \(_) ___| |_(_) ___  _ __   __ _ _ __ _   _ 
+ | | | | |/ __| __| |/ _ \| '_ \ / _` | '__| | | |
+ | |_| | | (__| |_| | (_) | | | | (_| | |  | |_| |
+ |____/|_|\___|\__|_|\___/|_| |_|\__,_|_|   \__, |
+                                            |___/ 
 
-
-
-
+"""
 
 # A dictionary (datatype: dict) is a collection of keys and values
 # We can mix datatypes for both keys and values
@@ -256,6 +299,15 @@ mydict = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
 
 mydict["e"] = 2.718  # This is how you add a dictionary value.
 
+
+"""
+  _                 _                  
+ | |__   ___   ___ | | ___  __ _ _ __  
+ | '_ \ / _ \ / _ \| |/ _ \/ _` | '_ \ 
+ | |_) | (_) | (_) | |  __/ (_| | | | |
+ |_.__/ \___/ \___/|_|\___|\__,_|_| |_|
+                                       
+ """
 
 
 # A boolean variable is either True or False
@@ -306,6 +358,15 @@ True and not True
 
 True or not True
 
+"""
+  _____                 _   _                 
+ |  ___|   _ _ __   ___| |_(_) ___  _ __  ___ 
+ | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+ |  _|| |_| | | | | (__| |_| | (_) | | | \__ \
+ |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
+                                              
+ """
+
 
 
 # functions (built-in)
@@ -326,19 +387,19 @@ mystring = "This is a text."
 
 type(mystring)
 
-# The type function returns a result that we can save
+# The type function returns a result that we can save in a variable
 
 x = type(mystring)
 
 x
 
-print("Hello!")  # Does *not* return anything. Common source of error.
+print("Hello!")  # Does *not* return anything. **Common source of error**
 
 y = print("Hello!")
 
 y
 
-# length of a list
+# The len function gets us the length of a list or a str
 
 basket = ['bread', 'butter', 'milk']
 
@@ -347,18 +408,27 @@ len(basket)
 
 # length of a string
 
+mystring
+
 len(mystring)
 
-# 
+# The input function ask the user for input and returns it
 
 z = input("Write something here:")
 
 z
 
+# The sorted function returns a sorted list or str
 
 sorted([3,4,1,2,9])
 
+# The list function makes lists of other variables
+
 list("qwerty")
+
+# The range function returns a range type object
+
+range(1,10)
 
 list(range(1,10)) 
 
@@ -371,32 +441,39 @@ str(3.14)
 
 
 
-
-
-
-
-
-# We can package code in a function so that we can reuse the code.
+"""
+  _   _                                          _        _____                 _   _                 
+ | | | | ___  _ __ ___   ___ _ __ ___   __ _  __| | ___  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___ 
+ | |_| |/ _ \| '_ ` _ \ / _ \ '_ ` _ \ / _` |/ _` |/ _ \ | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+ |  _  | (_) | | | | | |  __/ | | | | | (_| | (_| |  __/ |  _|| |_| | | | | (__| |_| | (_) | | | \__ \
+ |_| |_|\___/|_| |_| |_|\___|_| |_| |_|\__,_|\__,_|\___| |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
+                                                                                                      
+ """
+ 
 # There are also user defined functions.
 
+# We can package our own code in a function so that we can reuse it.
 
-def triangle_area(height, width):  # a function name can have no spaces. height, width are arguments
-    area = height * width / 2      # This is a **block** of code.
-    return area                    # Return something from the function (area).
 
+def triangle_area(theight, tlength): # a function name can not have spaces.
+    tarea = theight * tlength / 2     # This is a **block** of code.
+    return tarea                     # Return something from the function.
+    
+# height, width are arguments, area is the return value
 
 triangle_area(3, 4)
 
 triangle_area(30, 40)
 
-
 # The **block** of code is important. That is how Python knows
 # what code belongs to the function.
 # Remember this concept, it will be important later.
+# tarea, theight and tlength are **local variables**
 
 
-
-
+tarea
+theight
+tlength
 
 
 # Import modules for more functions and other useful things.
@@ -416,15 +493,8 @@ from math import pi
 
 pi
 
-import math
-
-math.pi
-
-import this # The Zen of Python
-
 # Modules are practical if you do not want to have everything in the same
 # file. 
-
 
 
 
@@ -456,16 +526,17 @@ for letter in "python": # we can loop over the letters in a string
 
 if 3>2:
     print("Three is bigger.") # This is a codeblock
-    print("than two.")        #
+    print("than two.")        
 elif 3<2: 
     print("Three is smaller than two.") # This is another codeblock
+else:
+    print("This should never happen!")
 
 # elif is a contraction of "else - if"
 
 # "if" takes a boolean test that is either True or False
 
 True
-
 False
 
 
@@ -529,13 +600,14 @@ print("Hello", name, ":)")
 
 # Useful:
 
-from random import randint
+#           from random import randint
 
-while True:
-    pass
+#           while True:
+#               .....
 
 
-    
+# https://docs.python.org/3/library/random.html#random.randint
+# https://docs.python.org/3.9/index.html
 
 
 
