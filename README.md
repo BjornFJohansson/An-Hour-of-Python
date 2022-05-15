@@ -31,11 +31,16 @@ sums up the argument in a nice way.
 
 [![xkcd](https://imgs.xkcd.com/comics/python.png)](https://xkcd.com)
 
-Python i a general programming language, the world's most popular in 2019 and its popularity has [only increased since](https://pypl.github.io/PYPL.html). Python is especially popular in the fields of [data science](https://en.wikipedia.org/wiki/Data_science) and [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), two fields that should be of interest to a biology student.
+Python is a general programming language, the world's most popular in 2019 and its popularity
+has [only increased since](https://pypl.github.io/PYPL.html). Python is especially popular in the fields
+of [data science](https://en.wikipedia.org/wiki/Data_science)
+and [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), two fields that should be of interest to a biology student.
 
-Python is known to have a simple compact syntax and easily readable code since it contains few special characters, such as semicolons.
+Python has a compact syntax (not many keywords to remeber) and easily readable code since it contains few special
+characters, such as semicolons.
 
-Compare the two programs below, the first one in C++, another popular coding language and then the same program in Python.
+Compare the two programs below, the first one in C++, another popular coding language
+and then the same program in Python.
 
 #### C++
 
@@ -45,7 +50,7 @@ Compare the two programs below, the first one in C++, another popular coding lan
 
 int main()
 {
-    std::cout << "Hello, World! \n";
+    std::cout << "Hello, World!";
     return 0;
 }
 ```
@@ -54,21 +59,29 @@ int main()
 
 ```python
 # This Python program prints Hello, World!
-print("Hello, World! \n")
+print("Hello, World!")
 
 ```
-The goal of the program is to print the message "Hello World!" on the screen, which is probably obvious. I think most people would agree that the Python version is more intuitive.
+The goal of the program is to print the message "Hello World!" on the screen, which is
+probably obvious. I think most people would agree that the Python version is more intuitive.
 
-This is not to say that one computer language (such as Python) is necessarily better than another for all purposes. However, it is safe to say that Python is probably one of the best for beginners.
+This is not to say that one computer language (such as Python) is necessarily better than
+another for all purposes. However, it is safe to say that Python is probably one of the best for beginners.
 
-Because of its simplicity, Python is suitable for people who do not code every day (like me). It is suitable both for quick scripts for automation of some repetitive task but also for complex software with graphical interfaces and websites.
+Because of its simplicity, Python is also suitable for people who do not code every day (like me).
+It is suitable both for quick scripts for automation of some repetitive task but also for complex
+software with graphical interfaces and websites.
 
 
-One of the most important advantages of Python is the **large size of its community**, since this means that you can often find questions and answers to your coding problems by a simply searching with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
+One of the most important advantages of Python is the **large size of its community**, since this
+means that you can often find questions and answers to your coding problems by a simply searching
+with [google](https://www.google.com/search?q=loop+over+a+dictionary+python).
 
-An added benefit is the large variety of functionality that has been created and made available in software packages.
+An added benefit is the large variety of functionality that has been created and made available
+in software packages.
 
-A software package is a collection of files, usually to solve common problems in a specific area such as statistics or bioinformatics, that has been packaged for distribution and installation.
+A software package is a collection of files, usually to solve common problems in a specific area
+such as statistics or bioinformatics, that has been packaged for distribution and installation.
 
 Widely used Python packages include:
 - Numpy - comprehensive mathematical functions
@@ -76,9 +89,9 @@ Widely used Python packages include:
 - Biopython - tools for biological computation
 - Pandas - data analysis and manipulation
 - Matplotlib - static, animated, and interactive visualizations
- - scikit-learn - efficient tools for predictive data analysis and machine learning
- - NLTK - programs to work with human language data
- - Pillow - powerful image processing
+- scikit-learn - efficient tools for predictive data analysis and machine learning
+- NLTK - programs to work with human language data
+- Pillow - powerful image processing
 
 Python is used for everything from
 
@@ -97,20 +110,27 @@ You can even make games using Python:
 
 
 
-We will spend one hour (or so) learning the basics of Python using simple examples. The exercises are aimed at complete beginners with no previous programming experience.
+We will spend one hour (or so) learning the basics of Python using simple examples. The exercises
+are aimed at complete beginners with no previous programming experience.
 
-The tutor will demonstrate basic data types, repetition and decision making in the logical flow of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated development environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
+The tutor will demonstrate basic data types, repetition and decision making in the logical flow
+of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated development
+environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
 
 
 ### Installation
 
 
 The free Anaconda Scientific Python distribution from Continuum analytics is
-a nice way to install python on just about any computer. Anaconda is available for the Microsoft Windows, MacOSX and Linux platforms. Anaconda makes it easy to install Python packages with extra functionality. The the whole installation is located in one folder in the user's directory that is easy to uninstall.
+a nice way to install python on just about any computer. Anaconda is available for the Microsoft
+Windows, MacOSX and Linux platforms. Anaconda makes it easy to install Python packages with
+extra functionality. The the whole installation is located in one folder in the user's directory
+that is easy to uninstall.
 
 
 Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda) and
-download the Anaconda installation file for your operating system. Follow the installation instructions to save the file.  Beware that the installation file is large ~600 mb.
+download the Anaconda installation file for your operating system. Follow the installation
+instructions to save the file.  Beware that the installation file is large ~600 mb.
 
 Double click the installer and follow the instructions. Select default options when asked.
 
@@ -118,11 +138,12 @@ For installation on Linux, type: ```bash Anaconda3-2021.05-Linux-x86_64.sh```. i
 
 **If you have any trouble installing, check the detailed instructions [here](https://docs.anaconda.com/anaconda/install).**
 
-The next step is to start the Python editor Spyder.  Start “Spyder” from the start menu of your computer.
+The next step is to start the Python editor Spyder. Start “Spyder” from the start menu of your computer.
 
 # Exercises
 
-The Spyder editor was installed with the Anaconda distribution that you should have installed before this class (See previous section).
+The Spyder editor was installed with the Anaconda distribution that you should have installed before
+this class (See previous section).
 
 
 
@@ -138,7 +159,8 @@ This file will not be recognized by Spyder as a Python file.
 
 
 
-Start Spyder from the start menu of your computer. Open the file using the file>open menu of Spyder. It should look like in the picture below:
+Start Spyder from the start menu of your computer. Open the file using the file>open menu of
+Spyder. It should look like in the picture below:
 
 ![spyder](pics/spyder.png)
 

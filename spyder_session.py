@@ -17,21 +17,21 @@
             ~-_           _-~          ~-_       _-~
                 ~--______-~                ~-___-~
 
-                  _                               __ 
+                  _                               __
     /\           | |                             / _|
-   /  \   _ __   | |__   ___  _   _ _ __    ___ | |_ 
+   /  \   _ __   | |__   ___  _   _ _ __    ___ | |_
   / /\ \ | '_ \  | '_ \ / _ \| | | | '__|  / _ \|  _|
- / ____ \| | | | | | | | (_) | |_| | |    | (_) | |  
-/_/    \_\_| |_| |_| |_|\___/ \__,_|_|     \___/|_|  
-                                                    
+ / ____ \| | | | | | | | (_) | |_| | |    | (_) | |
+/_/    \_\_| |_| |_| |_|\___/ \__,_|_|     \___/|_|
 
- _____       _   _                 
-|  __ \     | | | |                
-| |__) |   _| |_| |__   ___  _ __  
-|  ___/ | | | __| '_ \ / _ \| '_ \ 
+
+ _____       _   _
+|  __ \     | | | |
+| |__) |   _| |_| |__   ___  _ __
+|  ___/ | | | __| '_ \ / _ \| '_ \
 | |   | |_| | |_| | | | (_) | | | |
 |_|    \__, |\__|_| |_|\___/|_| |_|
-        __/ |                      
+        __/ |
         |___/
 
 Version 1.1.0
@@ -40,7 +40,7 @@ Version 1.1.0
 
 
 
-# There are two ways to interact with python, interactively or by 
+# There are two ways to interact with python, interactively or by
 # saving a text file with the extension ".py" like this file.
 
 
@@ -48,8 +48,8 @@ Version 1.1.0
 
 
 
- 
-# Using python interactively will give us a response to each command. 
+
+# Using python interactively will give us a response to each command.
 
 # This is good for testing out python code lines.
 
@@ -64,13 +64,13 @@ Version 1.1.0
 
 # Lines in this document starting with "#" are comments and ignored by Python
 
-"""   
- _   _                 _                   
-| \ | |_   _ _ __ ___ | |__   ___ _ __ ___ 
+"""
+ _   _                 _
+| \ | |_   _ _ __ ___ | |__   ___ _ __ ___
 |  \| | | | | '_ ` _ \| '_ \ / _ \ '__/ __|
 | |\  | |_| | | | | | | |_) |  __/ |  \__ \
 |_| \_|\__,_|_| |_| |_|_.__/ \___|_|  |___/
-"""                                                   
+"""
 
 # An integer number (type: int):
 # select the number and click on the "Run selection or current line" button
@@ -108,12 +108,12 @@ Version 1.1.0
 
 
 """
- __     __         _       _     _                           ___  _     _           _       
- \ \   / /_ _ _ __(_) __ _| |__ | | ___  ___    ___  _ __   / _ \| |__ (_) ___  ___| |_ ___ 
+ __     __         _       _     _                           ___  _     _           _
+ \ \   / /_ _ _ __(_) __ _| |__ | | ___  ___    ___  _ __   / _ \| |__ (_) ___  ___| |_ ___
   \ \ / / _` | '__| |/ _` | '_ \| |/ _ \/ __|  / _ \| '__| | | | | '_ \| |/ _ \/ __| __/ __|
    \ V / (_| | |  | | (_| | |_) | |  __/\__ \ | (_) | |    | |_| | |_) | |  __/ (__| |_\__ \
     \_/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/  \___/|_|     \___/|_.__// |\___|\___|\__|___/
-                                                                     |__/                   
+                                                                     |__/
 """
 
 # The equal sign (=) is used to **assign** a
@@ -169,12 +169,12 @@ mystring = "This is a text"
 mystring # This will give us the content of "mystring"
 
 """
-  ____  _ _      _             
- / ___|| (_) ___(_)_ __   __ _ 
+  ____  _ _      _
+ / ___|| (_) ___(_)_ __   __ _
  \___ \| | |/ __| | '_ \ / _` |
   ___) | | | (__| | | | | (_| |
  |____/|_|_|\___|_|_| |_|\__, |
-                         |___/ 
+                         |___/
 """
 
 # We can look at each letter in a string. This is called slicing.
@@ -191,7 +191,7 @@ mystring[2]
 
 mystring[13]
 
-# Negative index: 
+# Negative index:
 
 #  This is a text
 #  11119876543210         letters -1 .. - 14
@@ -233,15 +233,15 @@ myfstring
 # A list is good for holding an ordered collection of variables or "objects"
 # A list can be made using square brackets []
 # Lists and strings are similar in many ways, but lists can hold any object
-# strings can only hold 
+# strings can only hold
 
 """
-  _     _     _   
- | |   (_)___| |_ 
+  _     _     _
+ | |   (_)___| |_
  | |   | / __| __|
- | |___| \__ \ |_ 
+ | |___| \__ \ |_
  |_____|_|___/\__|
-                  
+
 """
 
 # We can mix varables in a list:
@@ -281,14 +281,18 @@ del mylist[1]
 
 mylist + mylist # We can add two lists together
 
+# We can add a list element using the method "append"
+
+mylist.append("newitem")
+
 
 """
-  ____  _      _   _                              
- |  _ \(_) ___| |_(_) ___  _ __   __ _ _ __ _   _ 
+  ____  _      _   _
+ |  _ \(_) ___| |_(_) ___  _ __   __ _ _ __ _   _
  | | | | |/ __| __| |/ _ \| '_ \ / _` | '__| | | |
  | |_| | | (__| |_| | (_) | | | | (_| | |  | |_| |
  |____/|_|\___|\__|_|\___/|_| |_|\__,_|_|   \__, |
-                                            |___/ 
+                                            |___/
 
 """
 
@@ -305,12 +309,12 @@ mydict["e"] = 2.718  # This is how you add a dictionary value.
 
 
 """
-  _                 _                  
- | |__   ___   ___ | | ___  __ _ _ __  
- | '_ \ / _ \ / _ \| |/ _ \/ _` | '_ \ 
+  _                 _
+ | |__   ___   ___ | | ___  __ _ _ __
+ | '_ \ / _ \ / _ \| |/ _ \/ _` | '_ \
  | |_) | (_) | (_) | |  __/ (_| | | | |
  |_.__/ \___/ \___/|_|\___|\__,_|_| |_|
-                                       
+
  """
 
 
@@ -356,18 +360,18 @@ False or True
 
 not True
 
- 
+
 True and not True
 
 True or not True
 
 """
-  _____                 _   _                 
- |  ___|   _ _ __   ___| |_(_) ___  _ __  ___ 
+  _____                 _   _
+ |  ___|   _ _ __   ___| |_(_) ___  _ __  ___
  | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __|
  |  _|| |_| | | | | (__| |_| | (_) | | | \__ \
  |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
-                                              
+
  """
 
 
@@ -431,6 +435,8 @@ list("qwerty")
 
 # The range function returns a range type object
 
+list(range(10))
+
 range(1, 10)
 
 list(range(1,10))
@@ -445,23 +451,23 @@ float("3.14")
 
 
 """
-  _   _                                          _        _____                 _   _                 
- | | | | ___  _ __ ___   ___ _ __ ___   __ _  __| | ___  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___ 
+  _   _                                          _        _____                 _   _
+ | | | | ___  _ __ ___   ___ _ __ ___   __ _  __| | ___  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___
  | |_| |/ _ \| '_ ` _ \ / _ \ '_ ` _ \ / _` |/ _` |/ _ \ | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __|
  |  _  | (_) | | | | | |  __/ | | | | | (_| | (_| |  __/ |  _|| |_| | | | | (__| |_| | (_) | | | \__ \
  |_| |_|\___/|_| |_| |_|\___|_| |_| |_|\__,_|\__,_|\___| |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
-                                                                                                      
+
  """
- 
+
 # There are also user defined functions.
 
 # We can package our own code in a function so that we can reuse it.
 
 
-def triangle_area(theight, tlength): # a function name can not have spaces.
+def triangle_area(theight, tlength):  # a function name can not have spaces.
     tarea = theight * tlength / 2     # This is a **block** of code.
-    return tarea                     # Return something from the function.
-    
+    return tarea                      # Return something from the function.
+
 # height, width are arguments, area is the return value
 
 triangle_area(3, 4)
@@ -483,7 +489,7 @@ tlength
 # Modules are simply collections of useful functions.
 
 # The import statement:
-    
+
 import this
 
 import math
@@ -492,12 +498,13 @@ math.pi
 
 math.log
 
+
 from math import pi
 
 pi
 
 # Modules are practical if you do not want to have everything in the same
-# file. 
+# file.
 
 
 
@@ -513,24 +520,26 @@ mylist
 
 for element in mylist: # for accepts list, string, dict and other "container" types.
     print(element)     # codeblocks are treated as a group of code.
-    
+
 
 for element in range(5): # We can make a list if we do not have one.
     print(element)
 
+
 range(10)
-list(range(10)) # list is another built-in function 
+list(range(10)) # list is another built-in function
 
 
 for letter in "python": # we can loop over the letters in a string
     print(letter)
-    
+
+
 # The "if" statement
 
 if 3>2:
     print("Three is bigger.") # This is a codeblock
-    print("than two.")        
-elif 3<2: 
+    print("than two.")
+elif 3<2:
     print("Three is smaller than two.") # This is another codeblock
 else:
     print("This should never happen!")
@@ -563,7 +572,7 @@ while True:
 
 
 # More useful built-in functions:
-    
+
 # list & range
 
 list("This is a string")
@@ -588,7 +597,6 @@ print("Hello", name, ":)")
 # Programming task: Number guessing game
 # The computer will think of a number between 0 and 20
 # The user should make a guess
-# The computer 
 
 # How it should work:
 
@@ -611,8 +619,3 @@ print("Hello", name, ":)")
 
 # https://docs.python.org/3/library/random.html#random.randint
 # https://docs.python.org/3.9/index.html
-
-
-
-
-
