@@ -16,9 +16,6 @@ def cube_volume(x):
     return answer
 
 
-
-
-
 def cube_area(x):
     ''' This function should return the area of a cube with the edge x.
 
@@ -55,8 +52,6 @@ def space_diagonal(x):
     return answer
 
 
-
-
 def pyramid_volume(number_of_layers):
     """
     This function should return the total volume a pyramid of cubic blocks
@@ -67,13 +62,6 @@ def pyramid_volume(number_of_layers):
     # your code here!
 
     return answer
-
-
-
-
-
-
-
 
 
 def counter(wordlist):
