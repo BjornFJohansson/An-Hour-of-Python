@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-# João Almeida       
+    
 from random import randint
 number = randint(0, 20)
 while True:
