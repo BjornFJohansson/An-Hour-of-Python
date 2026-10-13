@@ -35,7 +35,7 @@
 
 # Version 1.3.0
 
-# This file is a Python source file called "spyder_session_v1_3.py"
+# This file is a Python source file called "spyder_session.py"
 # It is meant to showcase important parts of Python 3 syntax
 
 # Text starting with # like this one is a comment and is ignored by Python.
