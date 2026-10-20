@@ -186,8 +186,7 @@ def cube_area(x):
                 x
     '''
 
-    # your code here!
-
+    # +++your code here+++
     return answer
 ```
 
@@ -197,13 +196,12 @@ Use this function to check your result:
 
 ```python
 def cube_area_test():
-    result = cube_area(10)
-    if  result == None:
-        print(f"No result.")
-    elif isinstance(result, (int, float)):
-        print(f"Expected 600, got {result}")
-        if int(result) == 600:
-            print("OK!")
+    for edge, expected in [(10, 600), (1, 6), (0, 0), (0.5, 1.5)]:
+        result = cube_area(edge)
+        print(f"cube_area({edge}): expected {expected}, got {result}")
+        assert isinstance(result, (int, float)), "Return a number."
+        assert result == expected, "Incorrect cube area."
+    print("OK!")
 ```
 
 ### pyramid mass
@@ -227,11 +225,8 @@ Example with ten layers:
 ![pyramid](pics/pyramid.jpg)
 
 ```python
-
 def pyramid_mass(number_of_layers, density, edge):
-
-    # your code here!
-
+    # +++your code here+++
     return mass
 ```
 
@@ -243,13 +238,18 @@ Use this function to check your result:
 ```python
 def pyramidtest():
     from math import isclose
-    result = pyramid_mass(3, 10, 10)
-    if  result == None:
-        print(f"No result.")
-    elif isinstance(result, (int, float)):
-        print(f"Expected 50000, got {result}")
-        if isclose(int(result), 50000):
-            print("OK!")
+
+    cases = [(3, 10, 10, 140),
+             (1, 1000, 1, 1),
+             (0, 1000, 1, 0),
+             (2, 2000, 0.5, 1.25)]
+    for layers, density, edge, expected in cases:
+        result = pyramid_mass(layers, density, edge)
+        print(f"pyramid_mass({layers}, {density}, {edge}): "
+              f"expected {expected}, got {result}")
+        assert isinstance(result, (int, float)), "Return a number."
+        assert isclose(result, expected), "Incorrect pyramid mass."
+    print("OK!")
 ```
 
 
@@ -271,5 +271,27 @@ def counter(wordlist):
 	should return the integer 3
 
     """
-    # your code here!
+    # +++your code here+++
+    return count
 ```
+
+
+Use this function to check your result:
+
+```python
+def counter_test():
+    country_list = ["Argentina", "Barbados", "Andorra", "Algeria", "Canada", "Denmark"]
+    cases = [(country_list, 3), ([], 0), (["Canada", "Denmark"], 0),
+             (["Argentina", "Argentina", "apple", "", "A"], 3)]
+    for words, expected in cases:
+        result = counter(words)
+        print(f"counter({words}): expected {expected}, got {result}")
+        assert type(result) is int, "Return an integer."
+        assert result == expected, "Incorrect word count."
+    print("OK!")
+```
+
+To run a test, execute both the solution and its test function definition,
+then call `cube_area_test()`, `pyramidtest()`, or `counter_test()`.
+Each test prints the expected and actual results. An incorrect result raises
+an `AssertionError`; if all examples pass, the test prints `OK!`.
