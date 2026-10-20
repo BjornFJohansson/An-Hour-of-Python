@@ -1,6 +1,6 @@
 # An-Hour-of-Python![hourglass](pics/hourglass_small.png)
 
-### Programming?
+## Programming?
 
 [![steve](pics/stevejobs.png)](https://youtu.be/IY7EsTnUSxY?t=2)
 
@@ -27,7 +27,7 @@ This [TED talk](https://youtu.be/xfBWk4nw440?t=24) (10 min) by [Christian Genco]
 sums up the argument in a nice way.
 
 
-### Python :snake:
+## Python :snake:
 
 [![xkcd](https://imgs.xkcd.com/comics/python.png)](https://xkcd.com)
 
@@ -42,7 +42,7 @@ characters, such as semicolons.
 Compare the two programs below, the first one in C++, another popular coding language
 and then the same program in Python.
 
-#### C++
+## C++
 
 ```C++
 // This C++ program prints Hello, World!
@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-#### Python
+## Python
 
 ```python
 # This Python program prints Hello, World!
@@ -118,7 +118,7 @@ of a program. We will use the [Spyder](https://www.spyder-ide.org) integrated de
 environment (IDE). At the end we will code a simple example relevant to biology/bioinformatics.
 
 
-### Installation
+## Installation
 
 
 The free Anaconda Scientific Python distribution from Continuum analytics is
@@ -129,7 +129,7 @@ that is easy to uninstall.
 
 
 Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda) and
-download the miniconda installation file for your operating system. 
+download the miniconda installation file for your operating system.
 
 Follow the installation instructions to save the file. Beware that the installation file is large.
 
@@ -165,3 +165,110 @@ Spyder has two important parts, the text editor to the left and the interactive 
 
 We will go through the content of ```spyder_session.py``` together.
 
+
+## Excercises to do after the session
+
+### cube area
+
+Your task is to define a function that returns the area of a cube with the side X.
+
+```python
+def cube_area(x):
+    ''' This function should return the area of a cube with the edge x.
+
+               e-------f
+              /|      /|
+             / |     / |  x
+            a--|----b  |
+            |  g----|--h
+            | /     | /   x
+            c-------d
+                x
+    '''
+
+    # your code here!
+
+    return answer
+```
+
+
+
+Use this function to check your result:
+
+```python
+def cube_area_test():
+    result = cube_area(10)
+    if  result == None:
+        print(f"No result.")
+    elif isinstance(result, (int, float)):
+        print(f"Expected 600, got {result}")
+        if int(result) == 600:
+            print("OK!")
+```
+
+### pyramid mass
+
+The task is to define a python function that can calculate the mass of pyramids
+(metric tonnes) given a density (kg/m3) of the stone used, the edge size of each
+stone (m) and the number of layers.
+
+The pyramid is assumed to be solid and does not contain any internal
+open space. The stones used are assumed to be perfect cubes.
+
+The blocks are stacked like this:
+
+- layer 1  - one block
+- layer 2  - four blocks
+- layer 3  - nine blocks
+- layer 4  - sixteen blocks
+
+Example with ten layers:
+
+![pyramid](pics/pyramid.jpg)
+
+```python
+
+def pyramid_mass(number_of_layers, density, edge):
+
+    # your code here!
+
+    return mass
+```
+
+
+
+
+Use this function to check your result:
+
+```python
+def pyramidtest():
+    result = pyramid_mass(100, 100, 10)
+    if  result == None:
+        print(f"No result.")
+    elif isinstance(result, (int, float)):
+        print(f"Expected 62181700, got {result}")
+        if int(result) == 33835000:
+            print("OK!")
+```
+
+
+
+### Word list counter
+
+```python
+def counter(wordlist):
+    """
+    This function should return the number of words in a list beginning with a
+    capital A.
+
+	for example
+
+	country_list = ["Argentina", "Barbados", "Andorra", "Algeria", "Canada", "Denmark"]
+
+	counter(country_list)
+
+	should return the integer 3
+
+    """
+    # your code here!
+```
