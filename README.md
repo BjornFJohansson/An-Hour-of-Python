@@ -242,12 +242,13 @@ Use this function to check your result:
 
 ```python
 def pyramidtest():
-    result = pyramid_mass(100, 100, 10)
+    from math import isclose
+    result = pyramid_mass(3, 10, 10)
     if  result == None:
         print(f"No result.")
     elif isinstance(result, (int, float)):
-        print(f"Expected 62181700, got {result}")
-        if int(result) == 33835000:
+        print(f"Expected 50000, got {result}")
+        if isclose(int(result), 50000):
             print("OK!")
 ```
 
