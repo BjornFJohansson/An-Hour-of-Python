@@ -129,12 +129,13 @@ that is easy to uninstall.
 
 
 Go to the Anaconda [website](https://store.continuum.io/cshop/anaconda) and
-download the Anaconda installation file for your operating system. Follow the installation
-instructions to save the file.  Beware that the installation file is large ~600 mb.
+download the miniconda installation file for your operating system. 
+
+Follow the installation instructions to save the file. Beware that the installation file is large.
 
 Double click the installer and follow the instructions. Select default options when asked.
 
-For installation on Linux, type: ```bash Anaconda3-2021.05-Linux-x86_64.sh```. in the terminal to start the installation
+For installation on Linux, type: ```bash Miniconda3-latest-Linux-x86_64.sh```. in the terminal to start the installation
 
 **If you have any trouble installing, check the detailed instructions [here](https://docs.anaconda.com/anaconda/install).**
 
@@ -145,12 +146,7 @@ The next step is to start the Python editor Spyder. Start “Spyder” from the 
 The Spyder editor was installed with the Anaconda distribution that you should have installed before
 this class (See previous section).
 
-
-
 [![spyder_session](pics/BUTTON-d-2.jpg)](https://raw.githubusercontent.com/BjornFJohansson/An-Hour-of-Python/main/spyder_session.py)
-
-
-
 
 Download and save the file ```spyder_session.py``` by clicking on the download button above.
 
