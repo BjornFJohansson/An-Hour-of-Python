@@ -295,3 +295,12 @@ To run a test, execute both the solution and its test function definition,
 then call `cube_area_test()`, `pyramidtest()`, or `counter_test()`.
 Each test prints the expected and actual results. An incorrect result raises
 an `AssertionError`; if all examples pass, the test prints `OK!`.
+
+
+# Cheat sheets
+
+![](pics/cheat1.png)
+
+
+
+![](pics/cheat2.png)
