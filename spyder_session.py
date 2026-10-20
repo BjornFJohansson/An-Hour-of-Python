@@ -43,18 +43,14 @@
 # There are two ways to interact with Python, interactively or by
 # saving a text file with the extension ".py" like this file.
 
-# In an interactive Python session, expressions display their values.
-# Assignments do not display a result automatically.
-# This is good for testing lines of Python code.
-
-# For programs with several code lines, it is better
-# to save them in a ".py" file.
-
 # Working interactively in Spyder:
+
 # Run examples in order so that their variables have been defined.
 # Select an entire function, loop, or if/elif/else statement, including all
 # its indented lines, before executing it. Use four spaces per indentation
-# level; do not mix tabs and spaces. The indentation groups the code.
+# level; do not mix tabs and spaces.
+
+# The indentation groups the code in a code block.
 # Defining a function stores its instructions; calling it runs them.
 # After editing a function, execute its definition again before calling it.
 # If a result seems inconsistent, check for variables left over from earlier
@@ -74,34 +70,34 @@ r"""
 # Two common numeric data types are int and float.
 
 # An integer number (type: int):
-# select the number and click on the "Run selection or current line" button
+# select the number and click on the "Run current line or selection" button
 # above.
 
 5
 
 type(5)
 
-# A floating-point number (type: float)
+# A floating-point number (type ?)
+# What is type()
+# What is a type?
 
 3.14159265359
 
 type(3.14159265359)
 
-# We can use simple arithmetic such as:
-
-# Addition
+# We can use simple arithmetic such as addition
 
 2 + 2
 
-# A mathematical expression
+# A mathematical expression (Python follows PEMDAS https://en.wikipedia.org/wiki/Order_of_operations)
 
 50 - 5 * 6
 
-# With int and float operands, / returns a float, even for an exact division.
+# Division "/" returns a float, even for integer division.
 
 (50 - 5 * 6) / 4
 
-# With Python, it is possible to use the ** operator to calculate powers
+# The ** operator calculate powers
 
 5 ** 2  # 5 squared
 
@@ -109,29 +105,38 @@ type(3.14159265359)
 
 355 / 113    # Normal division, returns a float
 
-355 // 113    # Floor division, rounds the quotient down (towards negative infinity)
+355 // 113    # Floor division, rounds the quotient down
 
-355 % 113  # Modulo, returns the remainder of a division
+# The % modulo operator gives the remainder after dividing two
+# one number by another.
 
-# The modulo (or "modulus" or "mod") is the remainder after dividing
-# one number by another. Example: 100 mod 9 equals 1.
-# Because 100/9 = 11 with a remainder of 1.
-# Another example: 14 mod 12 equals 2. Because 14/12 = 1 with a remainder of 2.
+# Example: 100 % 9 is equal to 1
+# Because 100/9 is 11.11 ....
+# The integer part of the quotient is 11
+# 11 * 9 = 99, and 100-99 is 1
 
-5 % 2 # = 1 because 2 fits into 5 twice (4), leaving a remainder of 1
+100 % 9
+
+# Another example: 14 mod 12 equals 2.
+# This because 14/12 = 1 with a remainder of 2.
+
+355 % 113  # Why is this 16?
+
+5 % 2 # = 1 because 2 fits into 5 twice, leaving a remainder of 1
 
 9 % 3 # = 0 because 3 fits into 9 three times evenly, leaving no remainder
 
-10 % 4 # = 2 because 4 fits into 10 twice (8), leaving 2 left over.
+10 % 4 # = 2 because 4 fits into 10 twice, leaving 2 left over.
 
-# Checking if number % 2 == 0 tells you if a number is even (remainder 0) or odd (remainder 1)
+# Checking if number % 2 == 0 tells you if a number is even (remainder 0)
+# or odd (remainder 1)
 
-33 % 2
-34 % 2
+33 % 2  # uneven
+34 % 2  # even
 
 # Gotcha!
 
--2 % 2
+-2 % 2  # not what we expect... this does not work for negative numbers.
 
 
 r"""
@@ -144,8 +149,9 @@ r"""
 """
 
 # The equal sign (=) is used to **assign** a
-# value to a **variable name**. The name keeps its value until you reassign
-# or delete it, or restart or exit the Python interpreter.
+# value to a **variable name**.
+
+# The name keeps its value until you reassign or delete it.
 
 rectangle_width = 3
 
@@ -165,15 +171,17 @@ rectangle_width = 4  # We can assign a new value that replaces the old value
 
 rectangle_width
 
-area
+area  # this should not change the area
 
-area = rectangle_width * rectangle_height
+area = rectangle_width * rectangle_height # we can calculate the area again.
 
 area  # Display the new value calculated on the previous line
 
 # try to access an undefined variable "n":
 
-# n   # <== remove the first "#" to test this
+# remove the "#" on the line below and execute the line to test.
+# n
+
 
 # Other data types
 # We learned that Python has int and float to represent numbers.
@@ -198,7 +206,7 @@ r"""
 """
 
 
-# A string is good for holding text
+# A string is useful for holding text
 # it is made using "" or '' or """
 
 mystring = "This is a text"
@@ -208,6 +216,8 @@ mystring = 'This is a text'
 mystring = 'This is the "best" text'
 
 mystring = "This is the 'best' text"
+
+# mystring = "This is the "best" text"    # does not work!
 
 mystring      # This will give us the content of "mystring"
 
@@ -223,31 +233,28 @@ r"""
 # We can look at each character in a string. This is called indexing.
 # Positive indexing starts at 0; negative indices count from the end.
 
-mystring = "This is a text"
+mystring = "Thisisatext"
 
 mystring[0]
 
 mystring[2]
 
-#  This is a text
-#  01234567891111         letters 0 .. 13
-#            0123
-
-
-mystring[-1]
-
-# Negative indices: -1 is the last character; -14 is the first here.
-
-# Character:  T   h   i   s  (space)  i   s  (space)  a  (space)  t   e   x   t
-# Index:    -14 -13 -12 -11    -10   -9  -8     -7   -6     -5   -4  -3  -2  -1
+#  Thisisatext        indexing starts with 0 in Python.
+#  01234567891        letters 0 .. 10  (total 11)
+#            0
 
 mystring[-1]
 
-mystring[-14]
+# Negative indices: -1 is the last character; -11 is the first here.
+
+# Character: T---h---i--s--i--s--a--t--e--x--t
+# Index:    -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+
+mystring[-11]
 
 # We can look at parts of a string (a "slice").
 
-mystring[5:7]
+mystring[4:7]
 
 # Note that the coordinates are [including: excluding]
 # We can look at the second through the second-to-last characters.
@@ -268,33 +275,38 @@ mystring + mystring
 # String methods: working with DNA copied from a document
 # A method is called with a dot after the object, followed by parentheses.
 
+# A method is a function that belongs to an object.
+
+# An Object is the actual data container that lives in your
+# computer's memory. It contains the actual value (like 5 or "apple"),
+# a specific data type, and a unique identity (memory address).
+# In Python, everything is an object.
+
 copied_dna = "  atgcca  "
 
 copied_dna.strip()  # Removes whitespace at the ends, not internal spaces
-copied_dna         # Still contains the original spaces and lowercase letters
+copied_dna          # Still contains the original spaces and lowercase letters
 
 clean_dna = copied_dna.strip()
 clean_dna.upper()  # Returns a new string; clean_dna itself is unchanged
 clean_dna
 
 clean_dna = clean_dna.upper()  # Save the new value by assigning it
-clean_dna                    # Expected: "ATGCCA"
+clean_dna                      # Expected: "ATGCCA"
 
 # Strings are immutable: their individual characters cannot be changed.
-# Uncomment this line to see a TypeError:
+# Uncomment the line below and execute the line to see a TypeError:
 # clean_dna[0] = "G"
 
 clean_dna.count("C")           # Expected: 2
 clean_dna.replace("A", "a")    # Expected: "aTGCCa"; replaces every A
-clean_dna.startswith("ATG")   # Expected: True
-clean_dna                     # Still "ATGCCA"
+clean_dna.startswith("ATG")    # Expected: True
+clean_dna                      # Still "ATGCCA"
 
 # count counts non-overlapping occurrences of a substring.
 "AAAA".count("AA")             # Expected: 2, not 3
-# For overlapping matches in project01.py, you will need another approach.
 
 # Checkpoint: predict copied_dna and clean_dna before displaying them.
-
 
 # Useful! String formatting with f-strings
 
@@ -303,6 +315,7 @@ number = 12345
 
 myfstring = f"My name is {name} and my number is {number}"
 myfstring
+
 
 r"""
   _     _     _
@@ -315,7 +328,7 @@ r"""
 
 # A list is good for holding an ordered collection of objects.
 # A list can be made using square brackets []
-# Lists and strings are similar in many ways, but lists can hold any objects.
+# Lists and strings are similar in many ways, but a list can hold any object.
 # Strings contain only text characters.
 
 # We can mix objects of different types in a list:
@@ -329,6 +342,7 @@ mylist
 mylist[1]
 
 # We can also look at parts of a list (a "slice")
+# This concept is the same as the one for strings before.
 # list slice ->  mylist[start:stop:step]
 
 mylist[0:2]    # Lists have zero-based indexing, just like strings
@@ -380,7 +394,7 @@ mydict2 = {"Key 1": "Value 1", 2: 3, "pi": 3.14}
 mydict2["Key 1"]
 mydict2[2]
 
-mydict["e"] = 2.718  # This is how you add a dictionary value.
+mydict["e"] = 2.718  # This is how you can add a dictionary value.
 
 
 r"""
@@ -398,9 +412,12 @@ r"""
 True
 False
 
+# Important, True and False are case sensitive
+# true and false have no meaning.
+
 # boolean statements:
 
-1==1 # This is a very common error "=" vs "=="; Assignment vs test
+1==1 # This is a very common error "=" vs "=="; Assignment vs test for equivalence
 
 1==2
 
@@ -416,9 +433,14 @@ False
 
 2<=1
 
-"a" == "a"
+"a" == "a"  # is "a" equal to "a"?
 
 "a" == "b"
+
+"a" == "A"
+
+"a".upper() == "A".upper() # works!
+"a".lower() == "A".lower() # works!
 
 # Membership tests: "in" and "not in" return True or False.
 # In a string, membership checks for a substring, not just one character.
@@ -492,7 +514,8 @@ x = type(mystring)
 
 x
 
-# The "print" function displays text and returns None. **Common source of error**
+# The built in "print" function displays text and returns None.
+# Important! Common source of error
 
 print("Hello!")
 
@@ -525,11 +548,11 @@ y = print("Write something here:")
 # The sorted function returns a new sorted list, even if its input is a string.
 # It does not change the original collection.
 
-sorted([3,4,1,2,9])
-
 mylist2 = [3,4,1,2,9]
 
 sorted(mylist2)
+
+mylist2.sort()    # This is an important example of a method that changes the object!
 
 mylist2
 
@@ -565,14 +588,15 @@ list(range(10))
 
 range(1, 10)
 
-list(range(1,10))
-
 int(3.14)
 
 str(3.14)
 
+str(3.14) + str(3.14)
+
 float("3.14")
 
+int("314")
 
 
 
@@ -589,12 +613,16 @@ r"""
 # We can package our own code in a function so that we can reuse it.
 # height and width are parameters; the value of triangle_area is returned.
 
+# my_function <- function() { # create a function with the name my_function in R
+#   print("Hello World!")
+#   return(value)
+# }
+
 # triangle and triangle_bad are two user-defined functions:
 
-
-def triangle(height, width):  # a function name cannot have spaces.
-    triangle_area = height * width / 2     # This is a **code block**.
-    return triangle_area                      # Return something from the function.
+def triangle(height, width):              # a function name cannot have spaces.
+    triangle_area = height * width / 2    # This is a **code block**.
+    return triangle_area                  # Return something from the function.
 
 def triangle_bad(height, width):
     triangle_area = height * width / 2
@@ -607,7 +635,7 @@ def triangle_bad(height, width):
 
 aaa = triangle(30, 40)
 
-bbb = triangle_bad(3, 4)
+bbb = triangle_bad(30, 40)
 
 # compare the content of variables aaa and bbb!
 
@@ -624,11 +652,9 @@ bbb = triangle_bad(3, 4)
 # height
 # width
 
-# Reading a function stub: type hints, docstrings, and pass
-# This example uses the same notation as project01.py (Python 3.10 or newer).
+# Reading a function stub: pass does nothing
 
-
-def label_sample(sample: str) -> str:
+def label_sample(sample):
     """Return a sample name with the prefix 'Sample: '."""
     pass
 
@@ -650,7 +676,6 @@ help(label_sample)  # Displays the docstring and function signature
 print("Expected: True | Result:", label_sample("yeast") is None)
 # The last example describes the unfinished stub, not its intended final result.
 
-
 # Import modules for more functions and other useful things.
 # Modules can contain functions, constants, classes, and other code.
 
@@ -660,7 +685,7 @@ import math
 
 math.pi
 
-math.log
+math.log(2)
 
 # see the content of "math" here
 # https://docs.python.org/3/library/math.html#math.pi
@@ -686,6 +711,13 @@ ______ _
 """
 
 ### Program flow control statements are "for", "if" and "while".
+
+# for (x in 1:10) {    # This is a loop in R
+#   print(x)
+# }
+
+for x in range(10):          # The same loop in Python
+    print(x)
 
 # Repetition with the for statement
 # Let's bring back our list from before:
@@ -731,15 +763,13 @@ else:
 True
 False
 
-
-
 # Combining loops, conditions, and functions for biological data
 # The next examples practise techniques you can reuse in project01.py.
 
 # Building a result: collect the lengths of several DNA fragments.
 
 
-def fragment_lengths(fragments: list[str]) -> list[int]:
+def fragment_lengths(fragments):
     """Return one length for each fragment, in the same order."""
     lengths = []                  # Start a fresh list for each call
     for fragment in fragments:
@@ -755,7 +785,7 @@ print("Expected: [] | Result:", fragment_lengths([]))
 # Conditions inside functions: select a result using a comparison.
 
 
-def length_status(sequence: str, minimum: int) -> str:
+def length_status(sequence, minimum):
     """Classify a fragment using a supplied minimum length."""
     if len(sequence) < minimum:
         return "too short"
@@ -768,7 +798,7 @@ print("Expected: long enough | Result:", length_status("ATGC", 4))
 # Early return: find the first fragment that meets a length threshold.
 
 
-def first_long_fragment(fragments: list[str], minimum: int) -> str | None:
+def first_long_fragment(fragments, minimum):
     """Return the first sufficiently long fragment, or None if none qualifies."""
     for fragment in fragments:
         if len(fragment) >= minimum:
@@ -825,7 +855,7 @@ assert first_long_fragment(["A"], 4) is None
 # IndexError: an index is outside the sequence. IndentationError: check spaces.
 
 
-def checked_length_status(sequence: str, minimum: int) -> str:
+def checked_length_status(sequence, minimum):
     """Classify a fragment; reject a negative minimum length."""
     if minimum < 0:
         raise ValueError("minimum must be zero or greater")
@@ -936,9 +966,9 @@ print("Expected: 8 | Result:", numeric_guess + 1)
 #
 #     The randint function gives us an
 #     integer between a and b, including both endpoints:
-#     randint(a, b)
+#     randint(0, 20)
 
-# https://docs.python.org/3/library/random.html#random.randint
+#     https://docs.python.org/3/library/random.html#random.randint
 
 
 #     while True:
